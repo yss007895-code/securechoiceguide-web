@@ -80,7 +80,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🔐',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'LastPass', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=LastPass&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=200&fit=crop' },
       { name: 'Bitwarden', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Bitwarden&tag=securecg-20', image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=200&h=200&fit=crop' },
@@ -170,7 +170,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🛡️',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'Tor Browser', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Tor+Browser&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200&h=200&fit=crop' },
       { name: 'Brave Browser', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Brave+Browser&tag=securecg-20', image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=200&fit=crop' },
@@ -265,7 +265,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '📺',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
     affiliateProducts: [
       { name: 'ExpressVPN', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=ExpressVPN&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1596003906949-67221c37965c?w=200&h=200&fit=crop' },
       { name: 'NordVPN', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=NordVPN&tag=securecg-20', image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=200&h=200&fit=crop' },
