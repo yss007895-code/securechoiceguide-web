@@ -34,6 +34,25 @@ export const categories = [
 export const guides: StyleGuide[] = [
 
   {
+    slug: 'digital-footprint-clean-up-guide-online-privacy',
+    title: 'Digital Footprint Clean-Up: A Step-by-Step Guide to Online Privacy',
+    category: 'guides',
+    description: 'Minimize your digital footprint and boost online privacy with our expert guide. Learn practical cybersecurity tips, compare VPNs and data removal services.',
+    readTime: '12 min',
+    date: '2026-02-21',
+    tag: 'Guide',
+    emoji: '👣',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Optery', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Optery&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=200&h=200&fit=crop' },
+      { name: 'DeleteMe', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=DeleteMe&tag=securecg-20', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+      { name: 'Firefox browser', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Firefox+browser&tag=securecg-20', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+      { name: 'Brave browser', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Brave+browser&tag=securecg-20', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+      { name: 'DuckDuckGo browser', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=DuckDuckGo+browser&tag=securecg-20', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
+    ],
+  },
+
+  {
     slug: 'mastering-cybersecurity-essential-tips-protecting-digital-life',
     title: 'Mastering Cybersecurity: Essential Tips for Protecting Your Digital Life',
     category: 'guides',
