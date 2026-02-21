@@ -34,6 +34,22 @@ export const categories = [
 export const guides: StyleGuide[] = [
 
   {
+    slug: 'nordvpn-vs-expressvpn-ultimate-battle-online-security',
+    title: 'NordVPN vs. ExpressVPN: The Ultimate Battle for Online Security',
+    category: 'vpn-reviews',
+    description: 'A deep-dive VPN comparison: NordVPN vs. ExpressVPN. Our hands-on testing reveals which VPN truly delivers superior online security and privacy in 2026.',
+    readTime: '6 min',
+    date: '2026-02-21',
+    tag: 'Editor Pick',
+    emoji: '🛡️',
+    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'NordVPN', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=NordVPN&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=200&h=200&fit=crop' },
+      { name: 'ExpressVPN', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=ExpressVPN&tag=securecg-20', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+    ],
+  },
+
+  {
     slug: 'ultimate-secure-messaging-apps-protect-your-conversations',
     title: 'Ultimate Secure Messaging Apps: Protect Your Conversations',
     category: 'secure-messaging',
