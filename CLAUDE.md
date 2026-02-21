@@ -43,6 +43,43 @@ node scripts/agent-generate.js --full
 - `src/lib/guides-content-new.ts` - 최신 콘텐츠
 - `scripts/` - 자동화 스크립트
 
+## 콘텐츠 품질 규칙
+
+### AI 느낌 제거 (절대 금지 표현)
+- "In today's world", "In this article", "Let's dive in"
+- "It's important to note", "Whether you're a beginner or expert"
+- "In conclusion", "To sum up", "All in all"
+- "game-changer", "revolutionary", "cutting-edge"
+- "seamless", "leverage", "robust", "streamline"
+- "Look no further", "Without further ado"
+- "Are you looking for", "Have you ever wondered"
+- 느낌표(!) 글 전체에서 최대 2개
+- 이모지 사용 금지
+
+### 자연스러운 글쓰기
+- 문장 길이 랜덤: 짧은 문장(5단어)과 긴 문장(25단어) 섞기
+- 구어체 자연스럽게: "honestly", "here's the thing", "I'd skip this one"
+- 실제 사용 경험 톤: "I ran speed tests for 2 weeks" 스타일
+- 불완전한 문장 가끔: "Worth the price? Depends."
+- 부정적 의견도 포함 (진짜 단점, 경쟁 제품이 더 나은 점 언급)
+- 모든 글 도입부 매번 다르게 (템플릿 반복 금지)
+- 한 문단 2~4문장
+
+### SEO + E-E-A-T
+- FAQ 스키마 JSON-LD 자동 삽입
+- 목차(Table of Contents) 추가
+- 내부 링크 2~3개 (같은 사이트 관련 리뷰)
+- 외부 출처 링크 1~2개 (EFF, CISA, 보안 연구자)
+- 업데이트 날짜 표시
+- 읽기 시간 표시
+- 저자 프로필 섹션
+
+### 사이트 톤: 실제 사용 경험 기반 리뷰어
+- 프라이버시/보안 관심 사용자 대상
+- 구체적 수치: 속도(Mbps), 가격, 서버 수, 응답시간
+- 프로토콜(WireGuard, OpenVPN), 암호화 표준 언급
+- 실제 테스트 결과 기반 작성
+
 ## 필수 규칙
 - 파일 수정 후 반드시 git add, git commit, git push까지 완료할 것
 - push 없이 작업 완료 보고 금지
