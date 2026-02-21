@@ -34,6 +34,25 @@ export const categories = [
 export const guides: StyleGuide[] = [
 
   {
+    slug: 'antivirus-showdown-ultimate-pc-security',
+    title: 'Antivirus Showdown: The Ultimate Comparison for Total PC Security',
+    category: 'antivirus',
+    description: 'Dive into a head-to-head antivirus comparison of Bitdefender, Norton 360, and Kaspersky. Get honest insights on malware protection, performance, and privacy.',
+    readTime: '8 min',
+    date: '2026-02-21',
+    tag: 'Editor Pick',
+    emoji: '🛡️',
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Bitdefender Antivirus Plus', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Bitdefender+Antivirus+Plus&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=200&h=200&fit=crop' },
+      { name: 'Bitdefender Internet Security', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Bitdefender+Internet+Security&tag=securecg-20', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+      { name: 'Bitdefender Total Security', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Bitdefender+Total+Security&tag=securecg-20', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+      { name: 'Norton 360 Standard', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Norton+360+Standard&tag=securecg-20', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+      { name: 'Norton 360 Deluxe', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Norton+360+Deluxe&tag=securecg-20', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
+    ],
+  },
+
+  {
     slug: 'stream-without-buffering-best-vpns-for-flawless-streaming',
     title: 'Stream Without Buffering: The Best VPNs for Flawless Streaming',
     category: 'vpn-reviews',
