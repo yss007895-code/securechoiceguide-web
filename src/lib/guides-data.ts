@@ -34,6 +34,25 @@ export const categories = [
 export const guides: StyleGuide[] = [
 
   {
+    slug: 'secure-browsing-explained-how-to-choose-a-privacy-focused-browser',
+    title: 'Secure Browsing Explained: How to Choose a Privacy-Focused Browser',
+    category: 'guides',
+    description: 'Cut through the noise. Learn how to choose a privacy-focused browser to truly shield your online activities from tracking. Real advice, no-BS.',
+    readTime: '11 min',
+    date: '2026-02-21',
+    tag: 'Editor Pick',
+    emoji: '🕵️',
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=400&fit=crop',
+    affiliateProducts: [
+      { name: 'Brave Browser', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Brave+Browser&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=200&h=200&fit=crop' },
+      { name: 'Mozilla Firefox', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Mozilla+Firefox&tag=securecg-20', image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=200&h=200&fit=crop' },
+      { name: 'DuckDuckGo Privacy Browser', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=DuckDuckGo+Privacy+Browser&tag=securecg-20', image: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop' },
+      { name: 'uBlock Origin', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=uBlock+Origin&tag=securecg-20', image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200&h=200&fit=crop' },
+      { name: 'Privacy Badger', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Privacy+Badger&tag=securecg-20', image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop' },
+    ],
+  },
+
+  {
     slug: 'boost-your-anonymity-top-online-privacy-tools-you-need-now',
     title: 'Boost Your Anonymity: Top Online Privacy Tools You Need Now',
     category: 'privacy-tools',
