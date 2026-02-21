@@ -14,17 +14,17 @@ export default function NotFound() {
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
         <Link href="/" className="btn-primary text-sm">Go Home</Link>
         <Link href="/guides" className="btn-secondary text-sm">Browse Guides</Link>
-        <Link href="/shop" className="btn-secondary text-sm">Shop All Items</Link>
+        <Link href="/shop" className="btn-secondary text-sm">Browse Security Tools</Link>
       </div>
 
-      <div className="mt-12 border border-gray-100 rounded-xl p-6 bg-white">
-        <h2 className="font-display font-bold text-gray-900 text-sm mb-3">Popular right now</h2>
+      <div className="mt-12 border border-gray-800 rounded-xl p-6 bg-gray-800">
+        <h2 className="font-body font-bold text-white text-sm mb-3">Popular right now</h2>
         <div className="space-y-2 text-left">
           {[
-            { title: 'Capsule Wardrobe Guide', href: '/guides/capsule-wardrobe-working-women-2026' },
-            { title: 'Spring Fashion Trends 2026', href: '/guides/spring-fashion-trends-2026' },
-            { title: 'Best Jeans for Every Body Type', href: '/guides/best-jeans-every-body-type' },
-            { title: 'Amazon Fashion Finds Under $30', href: '/guides/amazon-fashion-finds-under-30' },
+            { title: 'Best VPNs 2026', href: '/guides/best-vpns-2026-ultimate-online-privacy' },
+            { title: 'NordVPN vs ExpressVPN', href: '/guides/nordvpn-vs-expressvpn-ultimate-battle-online-security' },
+            { title: 'Best Password Managers', href: '/guides/best-password-managers-2026' },
+            { title: 'Online Privacy Guide', href: '/guides/complete-online-privacy-guide-2026' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="block text-sm text-gray-500 hover:text-gray-900 transition-colors py-1">
               {link.title}

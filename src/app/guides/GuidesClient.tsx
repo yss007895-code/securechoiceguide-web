@@ -13,8 +13,8 @@ export default function GuidesClient() {
   return (
     <div className="pt-8">
       <div className="mb-8">
-        <h1 className="section-title">Style Guides</h1>
-        <p className="text-gray-400 mt-1">{guides.length} curated guides for every occasion</p>
+        <h1 className="section-title">Security Reviews</h1>
+        <p className="text-gray-400 mt-1">{guides.length} expert reviews and comparisons</p>
       </div>
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
         <input type="text" placeholder="Search guides..." value={search} onChange={e => setSearch(e.target.value)}

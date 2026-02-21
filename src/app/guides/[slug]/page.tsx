@@ -266,7 +266,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
           </div>
         )}
 
-        {/* More From StyleMeDaily */}
+        {/* More From SecureChoiceGuide */}
         {moreGuides.length > 0 && (
           <div className="mb-8">
             <h3 className="font-body font-bold text-white mb-4">Explore More Guides</h3>
