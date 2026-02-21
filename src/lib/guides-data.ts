@@ -42,7 +42,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Guide',
     emoji: '👣',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop',
+    image: '/images/guides/digital-footprint-clean-up-guide-online-privacy.webp',
     affiliateProducts: [
       { name: 'Optery', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Optery&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200&h=200&fit=crop' },
       { name: 'DeleteMe', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=DeleteMe&tag=securecg-20', image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=200&fit=crop' },
@@ -61,7 +61,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🔒',
-    image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&h=400&fit=crop',
+    image: '/images/guides/mastering-cybersecurity-essential-tips-protecting-digital-life.webp',
     affiliateProducts: [
       { name: 'Multi-factor Authentication', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Multi-factor+Authentication&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=200&h=200&fit=crop' },
       { name: 'Bitwarden', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Bitwarden&tag=securecg-20', image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=200&h=200&fit=crop' },
@@ -80,7 +80,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🔐',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
+    image: '/images/guides/ultimate-secure-messaging-apps-protect-your-conversations.webp',
     affiliateProducts: [
       { name: 'LastPass', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=LastPass&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=200&fit=crop' },
       { name: 'Bitwarden', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Bitwarden&tag=securecg-20', image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=200&h=200&fit=crop' },
@@ -98,7 +98,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🛡️',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
+    image: '/images/guides/bitdefender-vs-norton-360-antivirus-face-off.png',
     affiliateProducts: [
       { name: 'Bitdefender Total Security', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Bitdefender+Total+Security&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=200&h=200&fit=crop' },
       { name: 'Norton 360 Deluxe', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Norton+360+Deluxe&tag=securecg-20', image: 'https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=200&h=200&fit=crop' },
@@ -116,7 +116,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🛡️',
-    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop',
+    image: '/images/guides/nordvpn-vs-expressvpn-ultimate-battle-online-security.png',
     affiliateProducts: [
       { name: 'NordVPN', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=NordVPN&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=200&h=200&fit=crop' },
       { name: 'ExpressVPN', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=ExpressVPN&tag=securecg-20', image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=200&h=200&fit=crop' },
@@ -132,7 +132,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🔒',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
+    image: '/images/guides/ultimate-secure-messaging-apps-protect-your-conversations.webp',
     affiliateProducts: [
       { name: 'Signal', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Signal&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1560732488-6b0df240254a?w=200&h=200&fit=crop' },
       { name: 'Threema', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Threema&tag=securecg-20', image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=200&h=200&fit=crop' },
@@ -151,7 +151,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🕵️',
-    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&h=400&fit=crop',
+    image: '/images/guides/secure-browsing-explained-how-to-choose-a-privacy-focused-browser.png',
     affiliateProducts: [
       { name: 'Brave Browser', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Brave+Browser&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1596003906949-67221c37965c?w=200&h=200&fit=crop' },
       { name: 'Mozilla Firefox', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Mozilla+Firefox&tag=securecg-20', image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=200&h=200&fit=crop' },
@@ -170,7 +170,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🛡️',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
+    image: '/images/guides/ultimate-secure-messaging-apps-protect-your-conversations.webp',
     affiliateProducts: [
       { name: 'Tor Browser', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Tor+Browser&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200&h=200&fit=crop' },
       { name: 'Brave Browser', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Brave+Browser&tag=securecg-20', image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=200&fit=crop' },
@@ -189,7 +189,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Guide',
     emoji: '🔑',
-    image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=600&h=400&fit=crop',
+    image: '/images/guides/choosing-password-manager-free-vs-paid.png',
     affiliateProducts: [
       { name: 'Bitwarden', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Bitwarden&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=200&h=200&fit=crop' },
       { name: 'LastPass', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=LastPass&tag=securecg-20', image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=200&h=200&fit=crop' },
@@ -208,7 +208,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🔑',
-    image: 'https://images.unsplash.com/photo-1562813733-b31f71025d54?w=600&h=400&fit=crop',
+    image: '/images/guides/best-password-managers-2026.webp',
     affiliateProducts: [
       { name: '1Password', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=1Password&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=200&fit=crop' },
       { name: 'LastPass', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=LastPass&tag=securecg-20', image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=200&h=200&fit=crop' },
@@ -227,7 +227,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🛡️',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop',
+    image: '/images/guides/beyond-antivirus-zero-day-malware.png',
     affiliateProducts: [
       { name: 'ESET', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=ESET&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=200&h=200&fit=crop' },
       { name: 'Malwarebytes', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Malwarebytes&tag=securecg-20', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=200&h=200&fit=crop' },
@@ -246,7 +246,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🛡️',
-    image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop',
+    image: '/images/guides/antivirus-showdown-ultimate-pc-security.png',
     affiliateProducts: [
       { name: 'Bitdefender Antivirus Plus', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Bitdefender+Antivirus+Plus&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1560732488-6b0df240254a?w=200&h=200&fit=crop' },
       { name: 'Bitdefender Internet Security', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Bitdefender+Internet+Security&tag=securecg-20', image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=200&h=200&fit=crop' },
@@ -265,7 +265,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '📺',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
+    image: '/images/guides/ultimate-secure-messaging-apps-protect-your-conversations.webp',
     affiliateProducts: [
       { name: 'ExpressVPN', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=ExpressVPN&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1596003906949-67221c37965c?w=200&h=200&fit=crop' },
       { name: 'NordVPN', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=NordVPN&tag=securecg-20', image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=200&h=200&fit=crop' },
@@ -284,7 +284,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🛡️',
-    image: 'https://images.unsplash.com/photo-1560732488-6b0df240254a?w=600&h=400&fit=crop',
+    image: '/images/guides/is-a-free-vpn-worth-it-deep-dive.png',
     affiliateProducts: [
       { name: 'Proton VPN Free', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Proton+VPN+Free&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200&h=200&fit=crop' },
       { name: 'Windscribe Free', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=Windscribe+Free&tag=securecg-20', image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=200&fit=crop' },
@@ -303,7 +303,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-21',
     tag: 'Editor Pick',
     emoji: '🔒',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop',
+    image: '/images/guides/best-vpns-2026-ultimate-online-privacy.webp',
     affiliateProducts: [
       { name: 'NordVPN', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=NordVPN&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=200&h=200&fit=crop' },
       { name: 'ExpressVPN', brand: 'Amazon', price: 'See Price', url: 'https://www.amazon.com/s?k=ExpressVPN&tag=securecg-20', image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=200&h=200&fit=crop' },
