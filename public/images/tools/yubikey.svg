@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad-yubikey" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5021B7"/>
+      <stop offset="50%" stop-color="#855CF6"/>
+      <stop offset="100%" stop-color="#E9E9FE"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#grad-yubikey)"/>
+  <polygon points="173.1,53.0 173.1,67.0 161.0,74.0 148.9,67.0 148.9,53.0 161.0,46.0" fill="#855CF6" opacity="0.2"/>
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.15)"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="white">Y</text>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="white" opacity="0.9">YubiKey</text>
+  <rect x="60" y="168" width="80" height="2" rx="1" fill="white" opacity="0.3"/>
+</svg>

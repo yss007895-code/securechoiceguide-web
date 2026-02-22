@@ -16,7 +16,7 @@ const posts = [
     date: 'Feb 18, 2026',
     time: '8 min',
     cat: 'Privacy',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop',
+    image: '/images/blog/quiet-luxury-guide.svg',
     link: '/blog/quiet-luxury-guide',
   },
   {
@@ -26,7 +26,7 @@ const posts = [
     date: 'Feb 17, 2026',
     time: '6 min',
     cat: 'Reviews',
-    image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&h=400&fit=crop',
+    image: '/images/blog/spring-color-trends.svg',
     link: '/blog/spring-color-trends',
   },
   {
@@ -36,7 +36,7 @@ const posts = [
     date: 'Feb 16, 2026',
     time: '7 min',
     cat: 'Security',
-    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&h=400&fit=crop',
+    image: '/images/blog/capsule-wardrobe-mistakes.svg',
     link: '/blog/capsule-wardrobe-mistakes',
   },
   {
@@ -46,7 +46,7 @@ const posts = [
     date: 'Feb 15, 2026',
     time: '11 min',
     cat: 'Comparison',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
+    image: '/images/blog/nordstrom-vs-asos.svg',
     link: '/compare/nordvpn-vs-expressvpn',
   },
   {
@@ -56,7 +56,7 @@ const posts = [
     date: 'Feb 14, 2026',
     time: '15 min',
     cat: 'Review',
-    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop',
+    image: '/images/blog/antivirus-guide.svg',
     link: '/guides/best-antivirus-software-2026',
   },
   {
@@ -66,7 +66,7 @@ const posts = [
     date: 'Feb 12, 2026',
     time: '10 min',
     cat: 'Guide',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
+    image: '/images/blog/data-breach-check.svg',
     link: '/guides/check-data-breach-guide',
   },
 ];

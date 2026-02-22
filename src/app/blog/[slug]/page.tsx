@@ -23,7 +23,7 @@ const blogPosts: Record<string, BlogPost> = {
     excerpt: 'ISPs selling your data, public Wi-Fi risks, and government surveillance are all real threats. Here\'s why a VPN is no longer optional.',
     date: '2026-02-18',
     cat: 'Privacy',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop',
+    image: '/images/blog/quiet-luxury-guide.svg',
     content: [
       { heading: 'Why Privacy Matters More Than Ever', paragraphs: [
         'In 2026, your internet service provider can legally sell your browsing data to advertisers. Public Wi-Fi networks at cafes and airports are prime targets for hackers. And data breaches expose billions of records every year.',
@@ -50,7 +50,7 @@ const blogPosts: Record<string, BlogPost> = {
     excerpt: 'We tested the top 3 VPNs across 15 server locations for speed, latency, and reliability.',
     date: '2026-02-17',
     cat: 'Reviews',
-    image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&h=500&fit=crop',
+    image: '/images/blog/spring-color-trends.svg',
     content: [
       { heading: 'Our Testing Methodology', paragraphs: [
         'We tested each VPN on the same hardware, same ISP connection (500 Mbps baseline), across 15 server locations on 3 continents. Tests were run 5 times per location and averaged.',
@@ -76,7 +76,7 @@ const blogPosts: Record<string, BlogPost> = {
     excerpt: 'Reusing passwords, skipping 2FA, and using weak passphrases are just the start.',
     date: '2026-02-16',
     cat: 'Security',
-    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&h=500&fit=crop',
+    image: '/images/blog/capsule-wardrobe-mistakes.svg',
     content: [
       { heading: 'Mistake 1: Reusing Passwords Across Sites', paragraphs: [
         'The number one password mistake is using the same password on multiple sites. When one site gets breached (and they all do eventually), attackers try that password on every other service.',

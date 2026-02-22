@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad-windscribe-paid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262EAA"/>
+      <stop offset="50%" stop-color="#3F79F3"/>
+      <stop offset="100%" stop-color="#DDE4FC"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#grad-windscribe-paid)"/>
+  <line x1="160" y1="49" x2="180" y2="49" stroke="#3F79F3" stroke-width="2" opacity="0.3"/><line x1="170" y1="39" x2="170" y2="59" stroke="#3F79F3" stroke-width="2" opacity="0.3"/>
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.15)"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="white">W(</text>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" fill="white" opacity="0.9">Windscribe (Paid)</text>
+  <rect x="60" y="168" width="80" height="2" rx="1" fill="white" opacity="0.3"/>
+</svg>

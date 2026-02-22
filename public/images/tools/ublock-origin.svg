@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad-ublock-origin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#027F93"/>
+      <stop offset="50%" stop-color="#00BBD5"/>
+      <stop offset="100%" stop-color="#CBFDFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#grad-ublock-origin)"/>
+  <rect x="130" y="50" width="25" height="25" rx="4" fill="#00BBD5" opacity="0.25" transform="rotate(42 142 62)"/>
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.15)"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="white">UO</text>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="white" opacity="0.9">uBlock Origin</text>
+  <rect x="60" y="168" width="80" height="2" rx="1" fill="white" opacity="0.3"/>
+</svg>

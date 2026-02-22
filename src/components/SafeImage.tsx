@@ -3,11 +3,11 @@ import Image, { ImageProps } from 'next/image';
 import { useState } from 'react';
 
 const FALLBACK_IMAGES: Record<string, string> = {
-  vpn: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
-  privacy: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=400&fit=crop',
-  security: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&h=400&fit=crop',
-  password: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&h=400&fit=crop',
-  default: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop',
+  vpn: '/images/categories/vpn-reviews.svg',
+  privacy: '/images/categories/privacy-tools.svg',
+  security: '/images/categories/security-guides.svg',
+  password: '/images/categories/password-managers.svg',
+  default: '/images/categories/default.svg',
 };
 
 interface SafeImageProps extends Omit<ImageProps, 'onError'> {

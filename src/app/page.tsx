@@ -12,10 +12,10 @@ export default function HomePage() {
   const editorPicks = guides.slice(0, 3);
 
   const featuredGuides = [
-    { title: 'Best VPNs 2026', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=600&fit=crop', url: '/guides/best-vpns-2026-ultimate-online-privacy' },
-    { title: 'NordVPN vs ExpressVPN', image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400&h=600&fit=crop', url: '/guides/nordvpn-vs-expressvpn-ultimate-battle-online-security' },
-    { title: 'Best Password Managers', image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400&h=600&fit=crop', url: '/guides/best-password-managers-2026' },
-    { title: 'Online Privacy Guide', image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=600&fit=crop', url: '/guides/complete-online-privacy-guide-2026' },
+    { title: 'Best VPNs 2026', image: '/images/categories/featured-best-vpns-2026.svg', url: '/guides/best-vpns-2026-ultimate-online-privacy' },
+    { title: 'NordVPN vs ExpressVPN', image: '/images/categories/featured-nordvpn-vs-expressvpn.svg', url: '/guides/nordvpn-vs-expressvpn-ultimate-battle-online-security' },
+    { title: 'Best Password Managers', image: '/images/categories/featured-best-password-managers.svg', url: '/guides/best-password-managers-2026' },
+    { title: 'Online Privacy Guide', image: '/images/categories/featured-online-privacy-guide.svg', url: '/guides/complete-online-privacy-guide-2026' },
   ];
 
   const organizationJsonLd = {
