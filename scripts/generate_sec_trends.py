@@ -122,7 +122,7 @@ def resolve_urls_and_generate_images(guide: dict, gemini_client) -> dict:
     guide["image"] = generate_imagen_image(gemini_client, hero_prompt, slug, "hero", "16:9")
 
     def process_product(i, p):
-        p["url"] = "https://amzn.to/example"
+        p["url"] = "https://amzn.to/example?tag=securechoiceguide-20"
         if not p.get("brand"): p["brand"] = "SecurityBrand"
         prod_prompt = p.pop("product_image_prompt", f"Product photography on white background of {p['name']}")
         p["image"] = generate_imagen_image(gemini_client, prod_prompt, slug, f"prod{i}", "1:1")
