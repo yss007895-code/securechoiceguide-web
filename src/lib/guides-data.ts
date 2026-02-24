@@ -181,6 +181,23 @@ export const guides: StyleGuide[] = [  {
       { name: 'Lookout Security & Antivirus', brand: 'Lookout', price: '$29.99/yr', url: 'https://amzn.to/example', tag: 'Best for iOS', image: 'https://securechoiceguide.com/images/guides/best-mobile-security-apps-2026-prod3.jpg' },
     ],
   },
+  {
+    slug: 'best-vpn-for-streaming-2026',
+    title: 'The 4 Best VPNs for Streaming in 2026 (Netflix, Disney+, HBO Max Tested)',
+    category: 'security',
+    description: 'Most VPNs fail the streaming test. We ran 30+ services against 12 platforms over 2 weeks. Here are the only 4 that consistently deliver.',
+    readTime: '10 min',
+    date: '2026-02-24',
+    tag: 'Guide',
+    emoji: '🛡️',
+    image: 'https://securechoiceguide.com/images/guides/best-vpn-for-streaming-2026-hero.jpg',
+    affiliateProducts: [
+      { name: 'NordVPN', brand: 'Nord Security', price: '$4.99/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: 'https://securechoiceguide.com/images/guides/best-vpn-for-streaming-2026-prod0.jpg' },
+      { name: 'ExpressVPN', brand: 'Kape Technologies', price: '$8.32/mo', url: 'https://amzn.to/example', tag: 'Best for International Libraries', image: 'https://securechoiceguide.com/images/guides/best-vpn-for-streaming-2026-prod1.jpg' },
+      { name: 'CyberGhost', brand: 'Kape Technologies', price: '$2.19/mo', url: 'https://amzn.to/example', tag: 'Best Value', image: 'https://securechoiceguide.com/images/guides/best-vpn-for-streaming-2026-prod2.jpg' },
+      { name: 'Surfshark', brand: 'Surfshark B.V.', price: '$2.49/mo', url: 'https://amzn.to/example', tag: 'Best for Households', image: 'https://securechoiceguide.com/images/guides/best-vpn-for-streaming-2026-prod3.jpg' },
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
