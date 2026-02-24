@@ -10,7 +10,7 @@ export default function Header() {
     { href: '/guides', label: 'VPN Reviews' },
     { href: '/shop', label: 'Security Tools' },
     { href: '/blog', label: 'Blog' },
-    { href: '/compare/nordvpn-vs-expressvpn', label: 'Compare' },
+    { href: '/guides', label: 'Compare' },
   ];
 
   const isActive = (href: string) => {

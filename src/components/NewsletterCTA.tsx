@@ -6,8 +6,7 @@ export default function NewsletterCTA() {
         VPN deals, security alerts, and privacy tips delivered every Thursday.
       </p>
       <div className="max-w-md mx-auto">
-        <p className="text-sm text-emerald-400 font-medium">Coming soon</p>
-        <p className="text-xs text-gray-500 mt-2">Subscribe feature launching shortly.</p>
+        <a href="https://securechoiceguide.substack.com" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 text-white text-sm font-semibold px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors">Subscribe Free</a>
       </div>
       <p className="text-[11px] text-gray-500 mt-3">No spam. Unsubscribe anytime.</p>
     </div>
