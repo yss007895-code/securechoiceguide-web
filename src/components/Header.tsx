@@ -7,10 +7,11 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const links = [
-    { href: '/guides', label: 'VPN Reviews' },
-    { href: '/shop', label: 'Security Tools' },
+    { href: '/guides#security', label: 'VPN & Security' },
+    { href: '/guides#insurance', label: 'Insurance' },
+    { href: '/guides#finance', label: 'Personal Finance' },
     { href: '/blog', label: 'Blog' },
-    { href: '/guides', label: 'Compare' },
+    { href: '/compare', label: 'Compare' },
   ];
 
   const isActive = (href: string) => {

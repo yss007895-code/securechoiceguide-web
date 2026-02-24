@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-const FALLBACK_IMAGE = 'https://placehold.co/600x400?text=Image';
+const FALLBACK_IMAGE = '/images/placeholder.webp';
 
 interface SafeImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   fallbackSrc?: string;

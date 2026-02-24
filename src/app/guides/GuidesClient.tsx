@@ -1,10 +1,17 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { guides, categories } from '@/lib/guides-data';
 import GuideCard from '@/components/GuideCard';
 
 export default function GuidesClient() {
   const [cat, setCat] = useState('all');
+
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash && categories.some(c => c.slug === hash)) {
+      setCat(hash);
+    }
+  }, []);
   const [search, setSearch] = useState('');
   const filtered = guides
     .filter(g => cat === 'all' || g.category === cat)
