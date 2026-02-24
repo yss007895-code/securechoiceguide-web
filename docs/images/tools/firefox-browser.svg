@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad-firefox-browser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#944118"/>
+      <stop offset="50%" stop-color="#F69E10"/>
+      <stop offset="100%" stop-color="#FEF3CA"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#grad-firefox-browser)"/>
+  <line x1="142" y1="62" x2="162" y2="62" stroke="#F69E10" stroke-width="2" opacity="0.3"/><line x1="152" y1="52" x2="152" y2="72" stroke="#F69E10" stroke-width="2" opacity="0.3"/>
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.15)"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="white">FB</text>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="white" opacity="0.9">Firefox Browser</text>
+  <rect x="60" y="168" width="80" height="2" rx="1" fill="white" opacity="0.3"/>
+</svg>

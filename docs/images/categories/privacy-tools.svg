@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="cat-grad-privacy-tools" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#166788"/>
+      <stop offset="60%" stop-color="#0AAFD0"/>
+      <stop offset="100%" stop-color="#D1F5FB"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="20" fill="url(#cat-grad-privacy-tools)"/>
+  <circle cx="478" cy="87" r="52" fill="white" opacity="0.06"/>
+  <circle cx="132" cy="325" r="54" fill="white" opacity="0.08"/>
+  <circle cx="300" cy="175" r="20" fill="none" stroke="white" stroke-width="3" opacity="0.15"/><circle cx="300" cy="175" r="8" fill="white" opacity="0.15"/><line x1="315" y1="190" x2="325" y2="200" stroke="white" stroke-width="3" opacity="0.15"/>
+  <text x="300" y="260" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="white">Privacy Tools</text>
+  <rect x="230" y="275" width="140" height="3" rx="1.5" fill="white" opacity="0.3"/>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="white" opacity="0.7">SecureChoiceGuide</text>
+</svg>

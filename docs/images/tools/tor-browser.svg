@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad-tor-browser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B6C7E"/>
+      <stop offset="50%" stop-color="#0CB2CB"/>
+      <stop offset="100%" stop-color="#D3F7F8"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#grad-tor-browser)"/>
+  <polygon points="152,37 170,55 152,73 134,55" fill="#0CB2CB" opacity="0.2"/>
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.15)"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="white">TB</text>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="white" opacity="0.9">Tor Browser</text>
+  <rect x="60" y="168" width="80" height="2" rx="1" fill="white" opacity="0.3"/>
+</svg>

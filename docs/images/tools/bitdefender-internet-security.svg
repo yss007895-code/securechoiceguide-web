@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad-bitdefender-internet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007258"/>
+      <stop offset="50%" stop-color="#07C28A"/>
+      <stop offset="100%" stop-color="#CBFFEB"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#grad-bitdefender-internet)"/>
+  <polygon points="175.0,47.5 175.0,62.5 162.0,70.0 149.0,62.5 149.0,47.5 162.0,40.0" fill="#07C28A" opacity="0.2"/>
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.15)"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="white">BI</text>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="white" opacity="0.9">Bitdefender IS</text>
+  <rect x="60" y="168" width="80" height="2" rx="1" fill="white" opacity="0.3"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad-proton-vpn-free" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C449C"/>
+      <stop offset="50%" stop-color="#4284EC"/>
+      <stop offset="100%" stop-color="#DFEBF7"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#grad-proton-vpn-free)"/>
+  <rect x="145" y="32" width="25" height="25" rx="4" fill="#4284EC" opacity="0.25" transform="rotate(26 157 44)"/>
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.15)"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="white">PV</text>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="white" opacity="0.9">Proton VPN Free</text>
+  <rect x="60" y="168" width="80" height="2" rx="1" fill="white" opacity="0.3"/>
+</svg>

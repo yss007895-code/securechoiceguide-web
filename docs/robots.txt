@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+
+# Host
+Host: https://yss007895-code.github.io/stylemedaily-web
+
+# Sitemaps
+Sitemap: https://yss007895-code.github.io/stylemedaily-web/sitemap.xml
