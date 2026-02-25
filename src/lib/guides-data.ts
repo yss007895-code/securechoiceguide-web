@@ -29,7 +29,26 @@ export const categories = [
   { slug: 'finance', name: 'Personal Finance', icon: '💰' },
 ];
 
-export const guides: StyleGuide[] = [  {
+export const guides: StyleGuide[] = [ 
+  {
+    slug: 'best-antivirus-2026-kimwolf-botnet-protection',
+    title: 'Best Antivirus 2026: Beating the Kimwolf Botnet Threat',
+    category: 'antivirus',
+    description: 'The Kimwolf botnet is targeting outdated systems. See which 2026 antivirus suites actually stop it in our hands-on testing and comparison.',
+    readTime: '12 min',
+    date: '2026-02-25',
+    tag: 'Trending',
+    emoji: '🛡️',
+    image: 'C:\Users\yss00\site-factory\logs\images\securechoiceguide\best-antivirus-2026-kimwolf-botnet-protection.jpg',
+    affiliateProducts: [
+      { name: 'Bitdefender Total Security', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Bitdefender+Total+Security&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200&h=200&fit=crop' },
+      { name: 'Norton 360', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Norton+360&tag=securecg-20', image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=200&fit=crop' },
+      { name: 'Malwarebytes', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Malwarebytes&tag=securecg-20', image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=200&fit=crop' },
+      { name: 'Norton Password Manager', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Norton+Password+Manager&tag=securecg-20', image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=200&h=200&fit=crop' },
+      { name: 'Malwarebytes Browser Guard', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Malwarebytes+Browser+Guard&tag=securecg-20', image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=200&h=200&fit=crop' },
+    ],
+  },
+ {
     slug: 'best-vpns-for-remote-workers-2026',
     title: 'The 4 Best VPNs for Remote Workers in 2026 (Unbreakable Security)',
     category: 'security',
