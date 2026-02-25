@@ -31,6 +31,25 @@ export const categories = [
 
 export const guides: StyleGuide[] = [ 
   {
+    slug: 'antivirus-comparison-2026-kimwolf-botnet',
+    title: 'Antivirus Comparison 2026: Defend Against the Kimwolf Botnet',
+    category: 'comparisons',
+    description: 'Don\\\'t let the Kimwolf botnet hijack your network. We tested the top security suites of 2026 with real-world speed tests and privacy checks.',
+    readTime: '12 min',
+    date: '2026-02-25',
+    tag: 'Trending',
+    emoji: '🛡️',
+    image: '/images/articles/antivirus-comparison-2026-kimwolf-botnet.jpg',
+    affiliateProducts: [
+      { name: 'Bitdefender Total Security', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Bitdefender+Total+Security&tag=securecg-20', tag: 'Editor Pick', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200&h=200&fit=crop' },
+      { name: 'Norton 360 Deluxe', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Norton+360+Deluxe&tag=securecg-20', image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=200&fit=crop' },
+      { name: 'Surfshark One', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Surfshark+One&tag=securecg-20', image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=200&fit=crop' },
+      { name: 'Hotspot Shield', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Hotspot+Shield&tag=securecg-20', image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=200&h=200&fit=crop' },
+      { name: 'Windows Defender', brand: 'Amazon', price: '$--', url: 'https://www.amazon.com/s?k=Windows+Defender&tag=securecg-20', image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=200&h=200&fit=crop' },
+    ],
+  },
+
+  {
     slug: 'best-antivirus-2026-kimwolf-protection',
     title: 'Best Antivirus 2026: Top Protection vs. Kimwolf Botnet',
     category: 'antivirus',
