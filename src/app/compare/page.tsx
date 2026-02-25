@@ -1,9 +1,21 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Security Comparisons 2026: VPN, Antivirus & More',
   description: 'Honest head-to-head comparisons of top VPNs, antivirus software, and privacy tools. We test each product and give you the straight answer.',
+  keywords: ['vpn comparison', 'antivirus comparison', 'nordvpn vs expressvpn', 'security tool review', 'best vpn 2026'],
+  alternates: { canonical: `${SITE_URL}/compare` },
+  openGraph: {
+    title: 'Security Comparisons 2026: VPN, Antivirus & More',
+    description: 'Honest head-to-head comparisons of top VPNs, antivirus software, and privacy tools.',
+    type: 'website',
+    url: `${SITE_URL}/compare`,
+    siteName: SITE_NAME,
+    images: [{ url: '/images/categories/hero-security.webp', width: 1200, height: 630, alt: 'Security Tool Comparisons 2026' }],
+  },
+  twitter: { card: 'summary_large_image', site: '@SecureChoiceG' },
 };
 
 const comparisons = [

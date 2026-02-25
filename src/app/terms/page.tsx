@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service',
+  title: 'Terms of Service | SecureChoiceGuide',
   description: 'SecureChoiceGuide terms of service -- rules and guidelines for using our website.',
+  alternates: { canonical: `${SITE_URL}/terms` },
+  robots: { index: false, follow: true },
 };
 
 export default function TermsPage() {

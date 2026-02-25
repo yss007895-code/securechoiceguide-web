@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
+  title: 'Privacy Policy | SecureChoiceGuide',
   description: 'SecureChoiceGuide privacy policy -- how we collect, use, and protect your data.',
+  alternates: { canonical: `${SITE_URL}/privacy` },
+  robots: { index: false, follow: true },
 };
 
 export default function PrivacyPage() {

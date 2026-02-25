@@ -1,11 +1,22 @@
 import Link from 'next/link';
 import SafeImage from '@/components/SafeImage';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Blog - Cybersecurity News, VPN Tips & Privacy Updates',
   description: 'The latest cybersecurity news, VPN tips, privacy guides, and security tool reviews. Stay updated with expert analysis and practical advice.',
   keywords: ['cybersecurity blog', 'vpn news', 'privacy tips 2026', 'online security', 'data breach news'],
+  alternates: { canonical: `${SITE_URL}/blog` },
+  openGraph: {
+    title: 'Blog - Cybersecurity News, VPN Tips & Privacy Updates',
+    description: 'The latest cybersecurity news, VPN tips, privacy guides, and security tool reviews.',
+    type: 'website',
+    url: `${SITE_URL}/blog`,
+    siteName: SITE_NAME,
+    images: [{ url: '/images/categories/hero-security.webp', width: 1200, height: 630, alt: 'SecureChoiceGuide Blog' }],
+  },
+  twitter: { card: 'summary_large_image', site: '@SecureChoiceG' },
 };
 
 const posts = [

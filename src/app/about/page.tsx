@@ -1,9 +1,21 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'About SecureChoiceGuide -- Our Mission & Team',
   description: 'Meet the team behind SecureChoiceGuide. Learn how we test VPNs, antivirus software, and privacy tools -- and why we never let affiliate deals influence our recommendations.',
+  keywords: ['about securechoiceguide', 'vpn review experts', 'cybersecurity editorial team', 'online privacy mission', 'security research team'],
+  alternates: { canonical: `${SITE_URL}/about` },
+  openGraph: {
+    title: 'About SecureChoiceGuide -- Our Mission & Team',
+    description: 'Meet the team behind SecureChoiceGuide. Learn how we test VPNs, antivirus software, and privacy tools.',
+    type: 'website',
+    url: `${SITE_URL}/about`,
+    siteName: SITE_NAME,
+    images: [{ url: '/images/categories/hero-security.webp', width: 1200, height: 630, alt: 'SecureChoiceGuide - About Our Team' }],
+  },
+  twitter: { card: 'summary_large_image', site: '@SecureChoiceG' },
 };
 
 export default function AboutPage() {

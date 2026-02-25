@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer & FTC Disclosure',
+  title: 'Disclaimer & FTC Disclosure | SecureChoiceGuide',
   description: 'SecureChoiceGuide disclaimer, affiliate disclosure, and FTC compliance information.',
+  alternates: { canonical: `${SITE_URL}/disclaimer` },
+  robots: { index: false, follow: true },
 };
 
 export default function DisclaimerPage() {

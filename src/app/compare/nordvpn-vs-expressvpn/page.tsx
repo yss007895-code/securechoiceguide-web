@@ -1,11 +1,22 @@
 import Link from 'next/link';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'NordVPN vs ExpressVPN 2026: Which VPN Actually Wins?',
   description: 'We tested NordVPN and ExpressVPN for 6 months across speed, security, and streaming. Here is the honest breakdown to help you choose.',
   keywords: ['nordvpn vs expressvpn', 'best vpn 2026', 'nordvpn review', 'expressvpn review', 'vpn comparison'],
+  alternates: { canonical: `${SITE_URL}/compare/nordvpn-vs-expressvpn` },
+  openGraph: {
+    title: 'NordVPN vs ExpressVPN 2026: Which VPN Actually Wins?',
+    description: 'We tested NordVPN and ExpressVPN for 6 months. Here is the honest breakdown to help you choose.',
+    type: 'article',
+    url: `${SITE_URL}/compare/nordvpn-vs-expressvpn`,
+    siteName: SITE_NAME,
+    images: [{ url: '/images/categories/cat-nordvpn-express.webp', width: 1200, height: 630, alt: 'NordVPN vs ExpressVPN Comparison 2026' }],
+  },
+  twitter: { card: 'summary_large_image', site: '@SecureChoiceG' },
 };
 
 const rows = [
@@ -27,7 +38,32 @@ export default function NordVPNvsExpressVPN() {
   const nordWins = rows.filter(r => r.winner === 'nord').length;
   const expressWins = rows.filter(r => r.winner === 'express').length;
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'NordVPN vs ExpressVPN 2026: Which VPN Actually Wins?',
+    description: 'We tested NordVPN and ExpressVPN for 6 months across speed, security, and streaming.',
+    image: `${SITE_URL}/images/categories/cat-nordvpn-express.webp`,
+    datePublished: '2026-02-15',
+    dateModified: '2026-02-26',
+    author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/compare/nordvpn-vs-expressvpn` },
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Compare', item: `${SITE_URL}/compare` },
+      { '@type': 'ListItem', position: 3, name: 'NordVPN vs ExpressVPN', item: `${SITE_URL}/compare/nordvpn-vs-expressvpn` },
+    ],
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <article className="pt-8 max-w-3xl mx-auto">
       <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
         <Link href="/" className="hover:text-emerald-400">Home</Link>
@@ -175,5 +211,6 @@ export default function NordVPNvsExpressVPN() {
 
       <NewsletterCTA />
     </article>
+    </>
   );
 }

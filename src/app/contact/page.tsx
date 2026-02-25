@@ -1,8 +1,20 @@
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Contact Us -- Partnerships & Inquiries',
   description: 'Get in touch with the SecureChoiceGuide team for partnerships, sponsorships, or general inquiries.',
+  keywords: ['contact securechoiceguide', 'vpn review partnerships', 'cybersecurity sponsorship', 'security content partnership'],
+  alternates: { canonical: `${SITE_URL}/contact` },
+  openGraph: {
+    title: 'Contact SecureChoiceGuide',
+    description: 'Get in touch with the SecureChoiceGuide team for partnerships, sponsorships, or general inquiries.',
+    type: 'website',
+    url: `${SITE_URL}/contact`,
+    siteName: SITE_NAME,
+    images: [{ url: '/images/categories/hero-security.webp', width: 1200, height: 630, alt: 'Contact SecureChoiceGuide' }],
+  },
+  twitter: { card: 'summary_large_image', site: '@SecureChoiceG' },
 };
 
 export default function ContactPage() {
