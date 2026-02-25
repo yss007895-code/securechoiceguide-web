@@ -108,7 +108,7 @@ export default function NordVPNvsExpressVPN() {
       <div className="prose-style">
         <h2>Speed: NordVPN Takes the Lead</h2>
         <p>
-          We ran speed tests from the same ISP connection (500 Mbps baseline) across 15 server locations in North America, Europe, and Asia. NordVPN's NordLynx protocol -- built on WireGuard -- averaged 420 Mbps on nearby servers. ExpressVPN's Lightway protocol came in at 380 Mbps.
+          We ran speed tests from the same ISP connection (500 Mbps baseline) across 15 server locations in North America, Europe, and Asia. NordVPN&apos;s NordLynx protocol -- built on WireGuard -- averaged 420 Mbps on nearby servers. ExpressVPN&apos;s Lightway protocol came in at 380 Mbps.
         </p>
         <p>
           Worth it to note: the difference becomes more obvious on long-distance connections. NordVPN held 310 Mbps to Asian servers; ExpressVPN dropped to 280 Mbps. For anyone streaming 4K video or gaming, that gap matters.
@@ -127,12 +127,12 @@ export default function NordVPNvsExpressVPN() {
           Both unblock Netflix US, UK, Japan, and Canada. Both work with Disney+, HBO Max, BBC iPlayer, and Amazon Prime Video. In our 30-day streaming tests, NordVPN failed to unblock a specific library 3 times; ExpressVPN failed 4 times. Statistically a tie.
         </p>
         <p>
-          If you watch a lot of geo-restricted content and switch libraries often, ExpressVPN's MediaStreamer (smart DNS) gives slightly more flexibility. NordVPN's equivalent is SmartDNS, which is solid but a bit more manual to configure.
+          If you watch a lot of geo-restricted content and switch libraries often, ExpressVPN&apos;s MediaStreamer (smart DNS) gives slightly more flexibility. NordVPN&apos;s equivalent is SmartDNS, which is solid but a bit more manual to configure.
         </p>
 
         <h2>Price: NordVPN Wins Clearly</h2>
         <p>
-          On the 2-year plan: NordVPN costs $3.19/month. ExpressVPN costs $6.67/month. That is more than 2x the price for similar (sometimes lower) performance. Unless you specifically need ExpressVPN's router app or travel router features, NordVPN is the better value.
+          On the 2-year plan: NordVPN costs $3.19/month. ExpressVPN costs $6.67/month. That is more than 2x the price for similar (sometimes lower) performance. Unless you specifically need ExpressVPN&apos;s router app or travel router features, NordVPN is the better value.
         </p>
         <p>
           Both offer 30-day money-back guarantees. Both accept credit cards, PayPal, and cryptocurrency for maximum privacy.
@@ -140,7 +140,7 @@ export default function NordVPNvsExpressVPN() {
 
         <h2>When to Choose ExpressVPN</h2>
         <p>
-          ExpressVPN's router app (Aircove) is genuinely excellent -- it covers your entire home network with one subscription. If you have smart TVs, gaming consoles, or IoT devices you want protected without installing software on each one, ExpressVPN is the better pick.
+          ExpressVPN&apos;s router app (Aircove) is genuinely excellent -- it covers your entire home network with one subscription. If you have smart TVs, gaming consoles, or IoT devices you want protected without installing software on each one, ExpressVPN is the better pick.
         </p>
         <p>
           ExpressVPN also has better multi-device setup documentation and historically faster customer support response times in our tests.
