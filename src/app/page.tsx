@@ -24,7 +24,7 @@ export default function HomePage() {
     name: SITE_NAME,
     url: SITE_URL,
     description: SITE_DESCRIPTION,
-    logo: `${SITE_URL}/logo.png`,
+    logo: `${SITE_URL}/logo.svg`,
     sameAs: [
       'https://twitter.com/SecureChoiceG',
     ],

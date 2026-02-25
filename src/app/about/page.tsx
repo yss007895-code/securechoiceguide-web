@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About SecureChoiceGuide -- Our Mission & Team',
-  description: 'SecureChoiceGuide provides expert vpn & online security guides, honest reviews, and practical advice. Learn about our mission and editorial standards.',
+  description: 'Meet the team behind SecureChoiceGuide. Learn how we test VPNs, antivirus software, and privacy tools -- and why we never let affiliate deals influence our recommendations.',
 };
 
 export default function AboutPage() {
