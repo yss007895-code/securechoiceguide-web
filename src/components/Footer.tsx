@@ -36,6 +36,8 @@ export default function Footer() {
               <Link href="/about" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">About</Link>
               <Link href="/contact" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Contact</Link>
               <Link href="/privacy" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Terms of Service</Link>
+              <Link href="/affiliate-disclosure" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Affiliate Disclosure</Link>
               <Link href="/disclaimer" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Disclaimer</Link>
             </div>
           </div>
@@ -53,9 +55,11 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="text-xs text-gray-500 hover:text-emerald-400 transition-colors">Privacy</Link>
             <span className="text-gray-700">|</span>
-            <Link href="/disclaimer" className="text-xs text-gray-500 hover:text-emerald-400 transition-colors">Disclaimer</Link>
-            <span className="text-gray-700">|</span>
             <Link href="/terms" className="text-xs text-gray-500 hover:text-emerald-400 transition-colors">Terms</Link>
+            <span className="text-gray-700">|</span>
+            <Link href="/affiliate-disclosure" className="text-xs text-gray-500 hover:text-emerald-400 transition-colors">Affiliate Disclosure</Link>
+            <span className="text-gray-700">|</span>
+            <Link href="/disclaimer" className="text-xs text-gray-500 hover:text-emerald-400 transition-colors">Disclaimer</Link>
           </div>
         </div>
       </div>

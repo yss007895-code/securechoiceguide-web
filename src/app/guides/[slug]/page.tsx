@@ -11,6 +11,7 @@ import StickyShopBar from '@/components/StickyShopBar';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import AdUnit from '@/components/AdUnit';
 import ShareButtons from '@/components/ShareButtons';
+import AffiliateDisclosureBanner from '@/components/AffiliateDisclosureBanner';
 import type { Metadata } from 'next';
 
 export function generateStaticParams() {
@@ -145,6 +146,9 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
             <span>{new Date(guide.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
           </div>
         </header>
+
+        {/* Affiliate Disclosure Banner */}
+        <AffiliateDisclosureBanner />
 
         {/* Hero Image */}
         {guide.image && (
