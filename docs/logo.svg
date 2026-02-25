@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="#111827" rx="8"/>
+  <path d="M18 30 C18 22 24 16 32 16 L32 22 C27.5 22 24 25.5 24 30 C24 34.5 27.5 38 32 38 L32 44 C24 44 18 38 18 30Z" fill="#10b981"/>
+  <path d="M28 30 L31 33 L37 25" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="50" y="35" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" fill="white">Secure<tspan fill="#10b981">Choice</tspan>Guide</text>
+</svg>
