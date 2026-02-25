@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Surfshark vs NordVPN 2026: Which VPN Is Worth Your Money?',
   description: 'We tested Surfshark and NordVPN across speed, privacy, pricing, and features. Find out which VPN wins for everyday users in 2026.',
   keywords: ['surfshark vs nordvpn', 'best vpn 2026', 'nordvpn review', 'surfshark review', 'vpn comparison'],
+  alternates: { canonical: `${SITE_URL}/compare/surfshark-vs-nordvpn` },
 };
 
 const data = [
@@ -98,12 +100,12 @@ export default function SurfsharkVsNordVPN() {
         <div>
           <h2 className="font-body text-xl font-bold text-white mb-3">Privacy: Both Pass the Audit Test</h2>
           <p>NordVPN has been independently audited by PwC -- twice -- and confirmed its no-logs policy. Surfshark brought in Deloitte for their audit. Both are based outside the 14 Eyes surveillance alliance (Panama and Netherlands, respectively).</p>
-          <p className="mt-3">Honestly, either one holds up to scrutiny. If audit frequency matters to you, NordVPN has more history. If jurisdiction matters more, Panama (NordVPN) has slightly stricter privacy laws than the Netherlands.</p>
+          <p className="mt-3">Either one holds up to scrutiny. If audit frequency matters to you, NordVPN has more history. If jurisdiction matters more, Panama (NordVPN) has slightly stricter privacy laws than the Netherlands.</p>
         </div>
 
         <div>
           <h2 className="font-body text-xl font-bold text-white mb-3">Pricing: Surfshark Wins by a Mile</h2>
-          <p>Surfshark's 2-year plan runs about $2.49/month and covers unlimited devices. NordVPN's equivalent is around $3.69/month for 10 devices. If you've got a household with 6+ devices or want to share a subscription with family, Surfshark is the obvious choice -- you don't have to manage device slots.</p>
+          <p>Surfshark's 2-year plan runs about $2.49/month and covers unlimited devices. NordVPN's equivalent is around $3.69/month for 10 devices. If you've got a household with 6+ devices or want to share a subscription with family, Surfshark is the obvious choice.</p>
           <p className="mt-3">Both offer 30-day money-back guarantees, so you can test them risk-free.</p>
         </div>
 

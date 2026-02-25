@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: '1Password vs LastPass 2026: Which Password Manager Is Safer?',
   description: 'LastPass suffered a major breach. We compared 1Password and LastPass on security architecture, features, price, and trustworthiness for 2026.',
   keywords: ['1password vs lastpass', 'best password manager 2026', '1password review', 'lastpass review', 'password manager comparison'],
-  alternates: { canonical: `${SITE_URL}/compare/zara-vs-hm` },
+  alternates: { canonical: `${SITE_URL}/compare/1password-vs-lastpass` },
 };
 
 const data = [
@@ -23,20 +23,8 @@ const data = [
 ];
 
 export default function OnePasswordVsLastPass() {
-  const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      { '@type': 'Question', name: 'Is 1Password safer than LastPass?', acceptedAnswer: { '@type': 'Answer', text: '1Password uses a dual-key encryption model (master password + Secret Key) that LastPass does not have. After LastPass\'s 2022 breach, security researchers broadly recommend switching to 1Password, Bitwarden, or Dashlane.' } },
-      { '@type': 'Question', name: 'Was LastPass hacked?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. In 2022, LastPass suffered a significant breach where attackers accessed encrypted vault backups. While vaults are encrypted, the incident raised serious concerns about their security practices and incident response.' } },
-      { '@type': 'Question', name: 'Is 1Password worth paying for?', acceptedAnswer: { '@type': 'Answer', text: '1Password at $2.99/month offers excellent value considering the security architecture, Travel Mode, and clean interface. If budget is the main concern, Bitwarden offers a free open-source alternative.' } },
-    ],
-  };
-
   return (
     <article className="pt-8 max-w-3xl mx-auto">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-
       <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
         <Link href="/" className="hover:text-emerald-400">Home</Link>
         <span>/</span>
@@ -101,27 +89,27 @@ export default function OnePasswordVsLastPass() {
       <div className="space-y-6 text-gray-300">
         <div>
           <h2 className="font-body text-xl font-bold text-white mb-3">The 2022 Breach: Why It Still Matters</h2>
-          <p>In late 2022, LastPass disclosed that attackers had accessed encrypted customer vault backups. The vaults are encrypted, but attackers could attempt offline brute-force attacks on weak master passwords. Security researchers found the incident response slow and communication poor. The long-term trust impact has been significant -- millions of users migrated to alternatives.</p>
-          <p className="mt-3">1Password has had no comparable security incidents. Their Secret Key system adds an extra layer of protection: even if LastPass-style vault data were stolen, an attacker would need both your master password and your Secret Key to decrypt anything. That dual-factor encryption is a meaningful architectural advantage.</p>
+          <p>In late 2022, LastPass disclosed that attackers had accessed encrypted customer vault backups. The vaults are encrypted, but attackers could attempt offline brute-force attacks on weak master passwords. Security researchers found the incident response slow and communication poor. Millions of users migrated to alternatives.</p>
+          <p className="mt-3">1Password has had no comparable security incidents. Their Secret Key system adds extra protection: even if vault data were stolen, an attacker would need both your master password and your Secret Key to decrypt anything. That dual-factor encryption is a meaningful architectural advantage.</p>
         </div>
 
         <div>
           <h2 className="font-body text-xl font-bold text-white mb-3">Features: 1Password Leads on Security Tools</h2>
-          <p>Travel Mode is a feature unique to 1Password that lets you hide specific vaults when crossing international borders -- useful if you travel frequently or have clients with sensitive data. LastPass has no equivalent.</p>
-          <p className="mt-3">Both support passkeys, which are the emerging replacement for passwords. 1Password has broader integration and earlier adoption. Both apps autofill reliably across browsers and work on iOS, Android, Mac, Windows, and Linux.</p>
+          <p>Travel Mode is unique to 1Password -- it lets you hide specific vaults when crossing international borders. Useful if you travel frequently or handle sensitive client data. LastPass has no equivalent.</p>
+          <p className="mt-3">Both support passkeys, the emerging replacement for passwords. 1Password has broader integration and earlier adoption. Both apps autofill reliably across browsers and work on iOS, Android, Mac, Windows, and Linux.</p>
         </div>
 
         <div>
           <h2 className="font-body text-xl font-bold text-white mb-3">Pricing: Closer Than You Think</h2>
-          <p>Both start at roughly $3/month for individual plans. LastPass has a free tier that covers one device type (mobile or browser, not both). 1Password does not have a free tier but offers a 14-day trial. For families of 5, LastPass is slightly cheaper at $4/month vs 1Password's $4.99/month.</p>
-          <p className="mt-3">If price is the deciding factor, also consider Bitwarden -- it's open-source, free for individuals, and has a strong security track record.</p>
+          <p>Both start at roughly $3/month for individual plans. LastPass has a free tier covering one device type (mobile or browser, not both). 1Password has no free tier but offers a 14-day trial. For families of 5, LastPass is slightly cheaper at $4/month vs 1Password's $4.99/month.</p>
+          <p className="mt-3">If price is the deciding factor, also consider Bitwarden -- open-source, free for individuals, with a strong security track record.</p>
         </div>
 
         <div>
           <h2 className="font-body text-xl font-bold text-white mb-3">Our Recommendation</h2>
-          <p><strong className="text-white">Get 1Password</strong> if you're serious about password security. The Secret Key architecture, clean design, Travel Mode, and zero breach history make it the clear choice for security-conscious users.</p>
-          <p className="mt-2"><strong className="text-white">Consider Bitwarden</strong> if budget is the primary concern. It's open-source and free for individuals, with a paid tier at $10/year.</p>
-          <p className="mt-2"><strong className="text-white">Avoid LastPass</strong> until they rebuild trust through transparent security improvements and third-party audits -- or at minimum, change your master password if you're still using it.</p>
+          <p><strong className="text-white">Get 1Password</strong> if you're serious about password security. The Secret Key architecture, clean design, Travel Mode, and zero breach history make it the clear choice.</p>
+          <p className="mt-2"><strong className="text-white">Consider Bitwarden</strong> if budget is the primary concern. Open-source and free for individuals, with a paid tier at $10/year.</p>
+          <p className="mt-2"><strong className="text-white">Avoid LastPass</strong> until they rebuild trust through transparent security improvements and third-party audits.</p>
         </div>
 
         <div>
@@ -129,7 +117,7 @@ export default function OnePasswordVsLastPass() {
           {[
             { q: 'Is 1Password safer than LastPass?', a: '1Password uses a dual-key encryption model (master password + Secret Key) that LastPass does not have. After LastPass\'s 2022 breach, security researchers broadly recommend switching to 1Password, Bitwarden, or Dashlane.' },
             { q: 'Was LastPass hacked?', a: 'Yes. In 2022, attackers accessed encrypted vault backups. While vaults are encrypted, the incident raised serious concerns about LastPass\'s security practices and incident response transparency.' },
-            { q: 'Is 1Password worth paying for?', a: '1Password at $2.99/month offers excellent value given the security architecture and Travel Mode. If budget is the main concern, Bitwarden is a free open-source alternative with a strong track record.' },
+            { q: 'Is 1Password worth paying for?', a: '1Password at $2.99/month offers excellent value given the security architecture and Travel Mode. Bitwarden is a free open-source alternative with a strong track record if budget is the main concern.' },
             { q: 'What is 1Password\'s Secret Key?', a: 'A 34-character key generated on your device that combines with your master password to encrypt your vault. It\'s never sent to 1Password\'s servers, so even if their servers are breached, your vault data can\'t be decrypted without your Secret Key.' },
           ].map((f, i) => (
             <div key={i} className="mb-4 border border-gray-700 rounded-lg p-4 bg-gray-800/50">
@@ -140,6 +128,7 @@ export default function OnePasswordVsLastPass() {
         </div>
       </div>
 
+      {/* More Comparisons */}
       <div className="my-8">
         <h3 className="font-body font-bold text-white mb-4">More Security Comparisons</h3>
         <div className="grid sm:grid-cols-2 gap-3">

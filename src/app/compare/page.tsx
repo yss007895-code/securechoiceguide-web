@@ -14,6 +14,27 @@ const comparisons = [
     verdict: 'NordVPN wins',
     tags: ['VPN', 'Privacy'],
   },
+  {
+    slug: 'surfshark-vs-nordvpn',
+    title: 'Surfshark vs NordVPN',
+    subtitle: 'Unlimited devices vs top-tier speed and server network',
+    verdict: 'NordVPN edges ahead',
+    tags: ['VPN', 'Privacy'],
+  },
+  {
+    slug: 'bitdefender-vs-norton',
+    title: 'Bitdefender vs Norton',
+    subtitle: 'Which antivirus catches more threats with less system impact?',
+    verdict: 'Bitdefender wins',
+    tags: ['Antivirus', 'Security'],
+  },
+  {
+    slug: '1password-vs-lastpass',
+    title: '1Password vs LastPass',
+    subtitle: 'After the LastPass breach, which password manager should you trust?',
+    verdict: '1Password wins',
+    tags: ['Password Manager', 'Privacy'],
+  },
 ];
 
 export default function ComparePage() {

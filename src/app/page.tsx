@@ -12,10 +12,10 @@ export default function HomePage() {
   const editorPicks = guides.slice(0, 3);
 
   const featuredGuides = [
-    { title: 'Best VPNs 2026', image: '/images/categories/cat-best-vpns.webp', url: '/guides/best-vpns-2026-ultimate-online-privacy' },
-    { title: 'NordVPN vs ExpressVPN', image: '/images/categories/cat-nordvpn-express.webp', url: '/guides/nordvpn-vs-expressvpn-ultimate-battle-online-security' },
+    { title: 'Best VPNs for Remote Work 2026', image: '/images/categories/cat-best-vpns.webp', url: '/guides/best-vpns-for-remote-workers-2026' },
+    { title: 'NordVPN vs ExpressVPN', image: '/images/categories/cat-nordvpn-express.webp', url: '/compare/nordvpn-vs-expressvpn' },
     { title: 'Best Password Managers', image: '/images/categories/cat-password-manager.webp', url: '/guides/best-password-managers-2026' },
-    { title: 'Online Privacy Guide', image: '/images/categories/cat-privacy-guide.webp', url: '/guides/complete-online-privacy-guide-2026' },
+    { title: 'Smart Home Security Guide', image: '/images/categories/cat-privacy-guide.webp', url: '/guides/how-to-secure-your-smart-home-2026' },
   ];
 
   const organizationJsonLd = {
