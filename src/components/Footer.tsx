@@ -36,7 +36,11 @@ export default function Footer() {
               <Link href="/about" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">About</Link>
               <Link href="/contact" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Contact</Link>
               <Link href="/privacy" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Terms of Service</Link>
               <Link href="/disclaimer" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Disclaimer</Link>
+              <Link href="/affiliate-disclosure" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Affiliate Disclosure</Link>
+              <Link href="/dmca" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">DMCA</Link>
+              <Link href="/cookie-policy" className="block text-sm text-gray-400 hover:text-emerald-400 transition-colors">Cookie Policy</Link>
             </div>
           </div>
         </div>

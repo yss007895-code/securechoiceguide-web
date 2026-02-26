@@ -3,6 +3,8 @@ import { newGuidesContent } from './guides-content-new';
 import { guidesContentBatch2 } from './guides-content-batch2';
 import { guidesContentBatch3 as _raw3 } from './guides-content-batch3';
 import { guidesContentPhase4 } from './guides-content-phase4';
+import { guidesContentNew40Part1 } from './guides-content-new40-part1';
+import { guidesContentNew40Part2 } from './guides-content-new40-part2';
 
 export interface ContentSection {
   heading: string;
@@ -40,4 +42,6 @@ export const guidesContent: Record<string, ContentSection[]> = {
   ...guidesContentBatch2,
   ...guidesContentBatch3,
   ...guidesContentPhase4,
+  ...guidesContentNew40Part1,
+  ...guidesContentNew40Part2,
 };
