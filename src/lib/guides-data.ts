@@ -843,7 +843,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "Debt Management",
     emoji: "\u26cf\ufe0f",
-    image: '/images/guides/how-to-get-out-of-debt-fast-2026-hero.jpg',
+    image: '/images/guides/how-to-get-out-of-debt-fast-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Tally (Line of Credit)",
@@ -986,7 +986,7 @@ export const guides: StyleGuide[] = [
         price: "From $3.29/mo",
         url: "https://nordvpn.com",
         tag: "Best Overall",
-        image: '/images/guides/best-vpn-for-remote-work-security-2026-prod.webp',
+        image: '/images/guides/nordvpn-product.webp',
       },
       {
         name: "ExpressVPN 1-Year Plan",
@@ -994,7 +994,7 @@ export const guides: StyleGuide[] = [
         price: "From $6.67/mo",
         url: "https://expressvpn.com",
         tag: "Fastest Speeds",
-        image: '/images/guides/best-vpn-for-remote-work-security-2026-prod.webp',
+        image: '/images/guides/expressvpn-product.webp',
       },
       {
         name: "Surfshark Starter",
@@ -1002,7 +1002,7 @@ export const guides: StyleGuide[] = [
         price: "From $2.49/mo",
         url: "https://surfshark.com",
         tag: "Best Value",
-        image: '/images/guides/best-vpn-for-remote-work-security-2026-prod.webp',
+        image: '/images/guides/surfshark-product.webp',
       },
       {
         name: "Private Internet Access",
@@ -1010,7 +1010,7 @@ export const guides: StyleGuide[] = [
         price: "From $2.03/mo",
         url: "https://privateinternetaccess.com",
         tag: "Most Servers",
-        image: '/images/guides/best-vpn-for-remote-work-security-2026-prod.webp',
+        image: '/images/guides/private-internet-access-product.webp',
       },
     ],
   },
@@ -1031,7 +1031,7 @@ export const guides: StyleGuide[] = [
         price: "From $3.29/mo",
         url: "https://nordvpn.com",
         tag: "Best Overall",
-        image: '/images/guides/vpn-kill-switch-explained-2026-prod.webp',
+        image: '/images/guides/nordvpn-product.webp',
       },
       {
         name: "Proton VPN Plus",
@@ -1039,7 +1039,7 @@ export const guides: StyleGuide[] = [
         price: "From $4.99/mo",
         url: "https://protonvpn.com",
         tag: "Best Privacy",
-        image: '/images/guides/vpn-kill-switch-explained-2026-prod.webp',
+        image: '/images/guides/proton-vpn-product.webp',
       },
       {
         name: "Mullvad VPN",
@@ -1047,7 +1047,7 @@ export const guides: StyleGuide[] = [
         price: "$5/mo flat",
         url: "https://mullvad.net",
         tag: "Most Anonymous",
-        image: '/images/guides/vpn-kill-switch-explained-2026-prod.webp',
+        image: '/images/guides/mullvad-vpn-product.webp',
       },
     ],
   },
@@ -1068,7 +1068,7 @@ export const guides: StyleGuide[] = [
         price: "From $3.29/mo",
         url: "https://nordvpn.com",
         tag: "Best Overall",
-        image: '/images/guides/best-vpn-no-logs-policy-2026-prod.webp',
+        image: '/images/guides/nordvpn-product.webp',
       },
       {
         name: "ExpressVPN 1-Year Plan",
@@ -1076,7 +1076,7 @@ export const guides: StyleGuide[] = [
         price: "From $6.67/mo",
         url: "https://expressvpn.com",
         tag: "Fastest Speeds",
-        image: '/images/guides/best-vpn-no-logs-policy-2026-prod.webp',
+        image: '/images/guides/expressvpn-product.webp',
       },
       {
         name: "Surfshark Starter",
@@ -1084,7 +1084,7 @@ export const guides: StyleGuide[] = [
         price: "From $2.49/mo",
         url: "https://surfshark.com",
         tag: "Best Value",
-        image: '/images/guides/best-vpn-no-logs-policy-2026-prod.webp',
+        image: '/images/guides/surfshark-product.webp',
       },
       {
         name: "Private Internet Access",
@@ -1092,7 +1092,7 @@ export const guides: StyleGuide[] = [
         price: "From $2.03/mo",
         url: "https://privateinternetaccess.com",
         tag: "Most Servers",
-        image: '/images/guides/best-vpn-no-logs-policy-2026-prod.webp',
+        image: '/images/guides/private-internet-access-product.webp',
       },
     ],
   },
@@ -1113,7 +1113,7 @@ export const guides: StyleGuide[] = [
         price: "From $3.29/mo",
         url: "https://nordvpn.com",
         tag: "Best Overall",
-        image: '/images/guides/wireguard-vs-openvpn-comparison-2026-prod.webp',
+        image: '/images/guides/nordvpn-product.webp',
       },
       {
         name: "ExpressVPN 1-Year Plan",
@@ -1121,7 +1121,7 @@ export const guides: StyleGuide[] = [
         price: "From $6.67/mo",
         url: "https://expressvpn.com",
         tag: "Fastest Speeds",
-        image: '/images/guides/wireguard-vs-openvpn-comparison-2026-prod.webp',
+        image: '/images/guides/expressvpn-product.webp',
       },
       {
         name: "Surfshark Starter",
@@ -1129,7 +1129,7 @@ export const guides: StyleGuide[] = [
         price: "From $2.49/mo",
         url: "https://surfshark.com",
         tag: "Best Value",
-        image: '/images/guides/wireguard-vs-openvpn-comparison-2026-prod.webp',
+        image: '/images/guides/surfshark-product.webp',
       },
       {
         name: "Private Internet Access",
@@ -1137,7 +1137,7 @@ export const guides: StyleGuide[] = [
         price: "From $2.03/mo",
         url: "https://privateinternetaccess.com",
         tag: "Most Servers",
-        image: '/images/guides/wireguard-vs-openvpn-comparison-2026-prod.webp',
+        image: '/images/guides/private-internet-access-product.webp',
       },
     ],
   },
@@ -1158,7 +1158,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/best-car-insurance-companies-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1166,7 +1166,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/best-car-insurance-companies-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1174,7 +1174,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/best-car-insurance-companies-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1195,7 +1195,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/best-health-insurance-self-employed-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1203,7 +1203,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/best-health-insurance-self-employed-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1211,7 +1211,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/best-health-insurance-self-employed-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1224,7 +1224,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "How-To",
     emoji: "💰",
-    image: '/images/guides/how-to-lower-car-insurance-premiums-2026-hero.jpg',
+    image: '/images/guides/how-to-lower-car-insurance-premiums-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Policygenius (Compare Quotes)",
@@ -1232,7 +1232,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/how-to-lower-car-insurance-premiums-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1240,7 +1240,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/how-to-lower-car-insurance-premiums-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1248,7 +1248,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/how-to-lower-car-insurance-premiums-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1269,7 +1269,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/best-pet-insurance-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1277,7 +1277,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/best-pet-insurance-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1285,7 +1285,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/best-pet-insurance-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1306,7 +1306,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/umbrella-insurance-guide-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1314,7 +1314,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/umbrella-insurance-guide-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1322,7 +1322,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/umbrella-insurance-guide-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1343,7 +1343,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/best-dental-insurance-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1351,7 +1351,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/best-dental-insurance-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1359,7 +1359,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/best-dental-insurance-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1380,7 +1380,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/what-is-gap-insurance-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1388,7 +1388,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/what-is-gap-insurance-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1396,7 +1396,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/what-is-gap-insurance-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1417,7 +1417,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/best-disability-insurance-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1425,7 +1425,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/best-disability-insurance-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1433,7 +1433,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/best-disability-insurance-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1446,7 +1446,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "Guide",
     emoji: "🏢",
-    image: '/images/guides/small-business-insurance-guide-2026-hero.jpg',
+    image: '/images/guides/small-business-insurance-guide-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Policygenius (Compare Quotes)",
@@ -1454,7 +1454,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/small-business-insurance-guide-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1462,7 +1462,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/small-business-insurance-guide-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1470,7 +1470,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/small-business-insurance-guide-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1491,7 +1491,7 @@ export const guides: StyleGuide[] = [
         price: "Free comparison",
         url: "https://policygenius.com",
         tag: "Best Comparison Tool",
-        image: '/images/guides/best-flood-insurance-2026-prod.webp',
+        image: '/images/guides/policygenius-product.webp',
       },
       {
         name: "Lemonade Insurance",
@@ -1499,7 +1499,7 @@ export const guides: StyleGuide[] = [
         price: "From $5/mo",
         url: "https://lemonade.com",
         tag: "Best for Renters",
-        image: '/images/guides/best-flood-insurance-2026-prod.webp',
+        image: '/images/guides/lemonade-insurance-product.webp',
       },
       {
         name: "Nationwide Insurance",
@@ -1507,7 +1507,7 @@ export const guides: StyleGuide[] = [
         price: "Get a quote",
         url: "https://nationwide.com",
         tag: "Most Coverage Options",
-        image: '/images/guides/best-flood-insurance-2026-prod.webp',
+        image: '/images/guides/nationwide-insurance-product.webp',
       },
     ],
   },
@@ -1528,7 +1528,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/best-budgeting-apps-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
@@ -1557,7 +1557,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "How-To",
     emoji: "💵",
-    image: '/images/guides/how-to-build-emergency-fund-fast-2026-hero.jpg',
+    image: '/images/guides/how-to-build-emergency-fund-fast-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Robinhood (Stocks + Crypto)",
@@ -1565,7 +1565,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/how-to-build-emergency-fund-fast-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
@@ -1602,7 +1602,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/best-investment-apps-beginners-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
@@ -1631,7 +1631,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "How-To",
     emoji: "⭐",
-    image: '/images/guides/how-to-improve-credit-score-fast-2026-hero.jpg',
+    image: '/images/guides/how-to-improve-credit-score-fast-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Robinhood (Stocks + Crypto)",
@@ -1639,7 +1639,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/how-to-improve-credit-score-fast-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
@@ -1668,7 +1668,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "Guide",
     emoji: "🏖️",
-    image: '/images/guides/retirement-savings-guide-2026-hero.jpg',
+    image: '/images/guides/retirement-savings-guide-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Robinhood (Stocks + Crypto)",
@@ -1676,7 +1676,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/retirement-savings-guide-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
@@ -1713,7 +1713,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/best-online-banks-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
@@ -1742,7 +1742,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "How-To",
     emoji: "🎓",
-    image: '/images/guides/how-to-pay-off-student-loans-fast-2026-hero.jpg',
+    image: '/images/guides/how-to-pay-off-student-loans-fast-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Robinhood (Stocks + Crypto)",
@@ -1750,7 +1750,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/how-to-pay-off-student-loans-fast-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
@@ -1787,7 +1787,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/best-personal-loans-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
@@ -1816,7 +1816,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "How-To",
     emoji: "💬",
-    image: '/images/guides/how-to-negotiate-salary-2026-hero.jpg',
+    image: '/images/guides/how-to-negotiate-salary-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Robinhood (Stocks + Crypto)",
@@ -1824,7 +1824,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/how-to-negotiate-salary-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
@@ -1853,7 +1853,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "Guide",
     emoji: "📐",
-    image: '/images/guides/compound-interest-explained-2026-hero.jpg',
+    image: '/images/guides/compound-interest-explained-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Robinhood (Stocks + Crypto)",
@@ -1861,7 +1861,7 @@ export const guides: StyleGuide[] = [
         price: "Free",
         url: "https://robinhood.com",
         tag: "Best for Beginners",
-        image: '/images/guides/compound-interest-explained-2026-prod.webp',
+        image: '/images/guides/robinhood-product.webp',
       },
       {
         name: "Fidelity Brokerage Account",
