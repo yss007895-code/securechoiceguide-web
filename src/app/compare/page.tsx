@@ -3,13 +3,13 @@ import type { Metadata } from 'next';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Security Comparisons 2026: VPN, Antivirus & More',
-  description: 'Honest head-to-head comparisons of top VPNs, antivirus software, and privacy tools. We test each product and give you the straight answer.',
-  keywords: ['vpn comparison', 'antivirus comparison', 'nordvpn vs expressvpn', 'security tool review', 'best vpn 2026'],
+  title: 'Security Tool Comparisons 2026: VPN, Antivirus & More',
+  description: 'Honest head-to-head comparisons of VPNs, antivirus software, and password managers. We test every product and give you the straight answer, no paid placements.',
+  keywords: ['vpn comparison', 'antivirus comparison', 'password manager comparison', 'nordvpn vs expressvpn', 'norton vs bitdefender', 'best vpn 2026'],
   alternates: { canonical: `${SITE_URL}/compare` },
   openGraph: {
-    title: 'Security Comparisons 2026: VPN, Antivirus & More',
-    description: 'Honest head-to-head comparisons of top VPNs, antivirus software, and privacy tools.',
+    title: 'Security Tool Comparisons 2026: VPN, Antivirus & More',
+    description: 'Honest head-to-head comparisons of top VPNs, antivirus software, and password managers.',
     type: 'website',
     url: `${SITE_URL}/compare`,
     siteName: SITE_NAME,
@@ -25,6 +25,27 @@ const comparisons = [
     desc: '6 months of testing, 15 server locations. NordVPN wins on speed and price; ExpressVPN wins on router support.',
     tag: 'VPN',
     verdict: 'NordVPN wins',
+  },
+  {
+    href: '/compare/expressvpn-vs-surfshark',
+    title: 'ExpressVPN vs Surfshark',
+    desc: 'Surfshark costs 3x less and offers unlimited devices. ExpressVPN edges on speed and has the better router app.',
+    tag: 'VPN',
+    verdict: 'Surfshark for value',
+  },
+  {
+    href: '/compare/norton-vs-bitdefender',
+    title: 'Norton 360 vs Bitdefender',
+    desc: 'Bitdefender scores 100% in AV-TEST and is lighter on system resources. Norton adds cloud backup and dark web monitoring.',
+    tag: 'Antivirus',
+    verdict: 'Bitdefender for protection',
+  },
+  {
+    href: '/compare/1password-vs-bitwarden',
+    title: '1Password vs Bitwarden',
+    desc: 'Bitwarden is free and open source. 1Password costs $36/year but delivers a more polished experience with Travel Mode.',
+    tag: 'Password Manager',
+    verdict: 'Bitwarden for value',
   },
 ];
 
@@ -63,14 +84,6 @@ export default function ComparePage() {
             </div>
           </Link>
         ))}
-      </div>
-
-      <div className="mt-12 p-6 rounded-2xl bg-gray-900 border border-gray-800 text-center">
-        <h3 className="font-body font-bold text-white mb-2">More comparisons coming soon</h3>
-        <p className="text-sm text-gray-400 mb-4">
-          We are currently testing Bitdefender vs Norton, 1Password vs Bitwarden, and more. Subscribe to get notified.
-        </p>
-        <Link href="/guides" className="btn-primary text-sm">Browse all guides</Link>
       </div>
     </div>
   );
