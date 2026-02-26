@@ -303,7 +303,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "VPN",
     emoji: "\ud83c\udfae",
-    image: '/images/guides/best-vpn-for-gaming-2026-hero.jpg',
+    image: '/images/guides/best-vpn-for-gaming-2026-hero.webp',
     affiliateProducts: [
       {
         name: "NordVPN",
@@ -348,7 +348,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "VPN Comparison",
     emoji: "\u2694\ufe0f",
-    image: '/images/guides/nordvpn-vs-expressvpn-2026-hero.jpg',
+    image: '/images/guides/nordvpn-vs-expressvpn-2026-hero.webp',
     affiliateProducts: [
       {
         name: "NordVPN 2-Year Plan",
@@ -393,7 +393,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "VPN",
     emoji: "\ud83c\udd93",
-    image: '/images/guides/best-free-vpn-2026-hero.jpg',
+    image: '/images/guides/best-free-vpn-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Proton VPN Free",
@@ -438,7 +438,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "VPN",
     emoji: "\u2708\ufe0f",
-    image: '/images/guides/best-vpn-for-travel-2026-hero.jpg',
+    image: '/images/guides/best-vpn-for-travel-2026-hero.webp',
     affiliateProducts: [
       {
         name: "ExpressVPN",
@@ -483,7 +483,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "Privacy Guide",
     emoji: "\ud83d\udd12",
-    image: '/images/guides/how-to-protect-privacy-online-2026-hero.jpg',
+    image: '/images/guides/how-to-protect-privacy-online-2026-hero.webp',
     affiliateProducts: [
       {
         name: "NordVPN",
@@ -528,7 +528,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "Home Insurance",
     emoji: "\ud83c\udfe0",
-    image: '/images/guides/best-home-insurance-2026-hero.jpg',
+    image: '/images/guides/best-home-insurance-2026-hero.webp',
     affiliateProducts: [
       {
         name: "Amica Mutual",
@@ -978,7 +978,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "VPN",
     emoji: "💼",
-    image: '/images/guides/best-vpn-for-remote-work-security-2026-hero.jpg',
+    image: '/images/guides/best-vpn-for-remote-work-security-2026-hero.webp',
     affiliateProducts: [
       {
         name: "NordVPN 2-Year Plan",
@@ -1023,7 +1023,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "Security",
     emoji: "🔒",
-    image: '/images/guides/vpn-kill-switch-explained-2026-hero.jpg',
+    image: '/images/guides/vpn-kill-switch-explained-2026-hero.webp',
     affiliateProducts: [
       {
         name: "NordVPN 2-Year Plan",
@@ -1060,7 +1060,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "VPN",
     emoji: "🛡️",
-    image: '/images/guides/best-vpn-no-logs-policy-2026-hero.jpg',
+    image: '/images/guides/best-vpn-no-logs-policy-2026-hero.webp',
     affiliateProducts: [
       {
         name: "NordVPN 2-Year Plan",
@@ -1105,7 +1105,7 @@ export const guides: StyleGuide[] = [
     date: '2026-02-25',
     tag: "Comparison",
     emoji: "⚡",
-    image: '/images/guides/wireguard-vs-openvpn-comparison-2026-hero.jpg',
+    image: '/images/guides/wireguard-vs-openvpn-comparison-2026-hero.webp',
     affiliateProducts: [
       {
         name: "NordVPN 2-Year Plan",
