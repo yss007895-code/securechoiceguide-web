@@ -1,8 +1,8 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 
-const POPUP_KEY = 'scg_popup_shown';
-const SHOW_DELAY_MS = 30000;
+export const POPUP_KEY = 'scg_popup_shown';
+export const SHOW_DELAY_MS = 30000;
 
 export default function NewsletterPopup() {
   const [visible, setVisible] = useState(false);

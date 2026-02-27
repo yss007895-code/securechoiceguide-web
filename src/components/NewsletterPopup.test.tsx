@@ -4,14 +4,10 @@ import { test, before, after, beforeEach } from 'node:test';
 import assert from 'node:assert';
 import { JSDOM } from 'jsdom';
 import { render, screen, cleanup, fireEvent, act } from '@testing-library/react';
-import NewsletterPopup from './NewsletterPopup';
+import NewsletterPopup, { POPUP_KEY, SHOW_DELAY_MS } from './NewsletterPopup';
 
 // Ensure React is available globally for JSX transformation if needed,
 // though importing it should be enough.
-// The error `React is not defined` usually means the component file uses JSX but doesn't import React,
-// OR the test runner environment doesn't provide the React global for the transformed JSX code.
-// Since Next.js uses the new JSX transform, explicit React import isn't needed in components,
-// but our test runner (tsx/node) might be using the classic transform or expecting React to be in scope.
 global.React = React;
 
 // Setup JSDOM
@@ -67,7 +63,7 @@ test('shows popup after timer', async (t) => {
   // Advance timer
   // Wrap in act because state update follows
   act(() => {
-    t.mock.timers.tick(30000);
+    t.mock.timers.tick(SHOW_DELAY_MS);
   });
 
   // Should be visible
@@ -132,18 +128,18 @@ test('dismissal logic', () => {
   assert.strictEqual(dismissedPopup, null);
 
   // Session storage should be set
-  assert.strictEqual(window.sessionStorage.getItem('scg_popup_shown'), '1');
+  assert.strictEqual(window.sessionStorage.getItem(POPUP_KEY), '1');
 });
 
 test('respects session storage', (t) => {
   t.mock.timers.enable({ apis: ['setTimeout'] });
-  window.sessionStorage.setItem('scg_popup_shown', '1');
+  window.sessionStorage.setItem(POPUP_KEY, '1');
 
   const { queryByRole } = render(<NewsletterPopup />);
 
   // Advance timer
   act(() => {
-    t.mock.timers.tick(30000);
+    t.mock.timers.tick(SHOW_DELAY_MS);
   });
 
   // Trigger exit intent
