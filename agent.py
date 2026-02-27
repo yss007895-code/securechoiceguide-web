@@ -13,11 +13,12 @@ from dotenv import load_dotenv
 from datetime import datetime
 
 # Load environment variables
-if sys.platform == "win32":
-    load_dotenv(dotenv_path=r"C:\Users\yss00\.env")
-else:
-    load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "agents", ".env"))
-    load_dotenv()  # also check local .env
+# Try loading from local .env first, then fallback to other locations if needed
+load_dotenv()
+# Also check for agents/.env in parent directories if local .env is missing or incomplete
+agents_env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "agents", ".env")
+if os.path.exists(agents_env_path):
+    load_dotenv(dotenv_path=agents_env_path)
 
 # Initialize Clients (Vertex AI - fashion-money-maker credits)
 gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", location="us-central1")
@@ -25,19 +26,12 @@ gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", locat
 GEMINI_MODEL = "gemini-3.1-pro"
 IMAGE_MODEL = "imagen-3.0-generate-001"
 
-# Auto-detect environment (Windows local vs Linux VM)
-if sys.platform == "win32":
-    WEB_ROOT = r"C:\Users\yss00\stylemedaily-web"
-    PINS_FILE = r"C:\Users\yss00\pins.txt"
-    ERROR_LOG = r"C:\Users\yss00\error_log.txt"
-    TOPICS_FILE = r"C:\Users\yss00\generated_topics.txt"
-    BACKUP_ROOT = r"C:\Users\yss00\backups"
-else:
-    WEB_ROOT = os.path.dirname(os.path.abspath(__file__))
-    PINS_FILE = os.path.join(WEB_ROOT, "pins.txt")
-    ERROR_LOG = os.path.join(WEB_ROOT, "error_log.txt")
-    TOPICS_FILE = os.path.join(WEB_ROOT, "generated_topics.txt")
-    BACKUP_ROOT = os.path.join(WEB_ROOT, "backups")
+# Path configuration
+WEB_ROOT = os.path.dirname(os.path.abspath(__file__))
+PINS_FILE = os.path.join(WEB_ROOT, "pins.txt")
+ERROR_LOG = os.path.join(WEB_ROOT, "error_log.txt")
+TOPICS_FILE = os.path.join(WEB_ROOT, "generated_topics.txt")
+BACKUP_ROOT = os.path.join(WEB_ROOT, "backups")
 
 GUIDES_DIR = os.path.join(WEB_ROOT, "style-guides")
 GUIDES_DATA_PATH = os.path.join(WEB_ROOT, "src", "lib", "guides-data.ts")
