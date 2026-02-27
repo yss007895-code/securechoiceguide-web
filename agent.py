@@ -20,7 +20,7 @@ else:
     load_dotenv()  # also check local .env
 
 # Initialize Clients (Vertex AI - fashion-money-maker credits)
-gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", location="us-central1")
+gemini_client = genai.Client(vertexai=True, project=os.getenv("GCP_PROJECT_ID"), location="us-central1")
 
 GEMINI_MODEL = "gemini-3.1-pro"
 IMAGE_MODEL = "imagen-3.0-generate-001"

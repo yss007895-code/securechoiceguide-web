@@ -9,9 +9,11 @@ from datetime import datetime
 from pathlib import Path
 from google import genai
 from google.genai import types
+from dotenv import load_dotenv
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).parent.parent
+load_dotenv(ROOT / ".env")
 GUIDES_DATA = ROOT / "src" / "lib" / "guides-data.ts"
 GUIDES_CONTENT = ROOT / "src" / "lib" / "guides-content-new.ts"
 IMAGES_DIR = ROOT / "public" / "images" / "guides"
@@ -166,7 +168,11 @@ def insert_guide_into_content_file(content_ts: str):
 
 def main():
     print("🤖 SecureChoiceGuide Content Agent (Mass Gen) starting...")
-    gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", location="us-central1")
+    project_id = os.getenv("GCP_PROJECT_ID")
+    if not project_id:
+        raise ValueError("GCP_PROJECT_ID not set in .env")
+
+    gemini_client = genai.Client(vertexai=True, project=project_id, location="us-central1")
     
     reset_guides_data()
 
