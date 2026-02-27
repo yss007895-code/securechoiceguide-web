@@ -9,6 +9,7 @@ import re
 import tweepy
 import shutil
 import urllib.request
+import concurrent.futures
 from dotenv import load_dotenv
 from datetime import datetime
 
@@ -156,10 +157,27 @@ def get_valid_image_url(url):
     if validate_image_url(url):
         return url
     print(f"Image URL failed validation: {url}")
-    for fallback in FALLBACK_IMAGES:
-        if validate_image_url(fallback):
-            print(f"Using fallback: {fallback}")
-            return fallback
+
+    # Parallel validation of fallbacks to speed up process
+    # Use an executor without 'with' block to allow early exit without waiting for all tasks
+    executor = concurrent.futures.ThreadPoolExecutor(max_workers=len(FALLBACK_IMAGES))
+    try:
+        future_to_url = {executor.submit(validate_image_url, fb): fb for fb in FALLBACK_IMAGES}
+        for future in concurrent.futures.as_completed(future_to_url):
+            try:
+                if future.result():
+                    fallback = future_to_url[future]
+                    print(f"Using fallback: {fallback}")
+                    # Attempt to cancel others and return immediately
+                    executor.shutdown(wait=False, cancel_futures=True)
+                    return fallback
+            except Exception:
+                continue
+    except Exception:
+        pass
+    finally:
+        executor.shutdown(wait=False)
+
     return FALLBACK_IMAGES[0]
 
 def strip_markdown_fences(text):
