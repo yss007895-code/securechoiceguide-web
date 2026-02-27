@@ -20,6 +20,12 @@ export interface AffiliateProduct {
   image?: string;
 }
 
+export type ProductWithGuide = AffiliateProduct & {
+  fromGuide: string;
+  fromGuideSlug: string;
+  category: string;
+};
+
 export const categories = [
   { slug: 'all', name: 'All Guides', icon: '✨' },
   { slug: 'security', name: 'Cybersecurity', icon: '🛡️' },
@@ -2365,9 +2371,15 @@ export function getGuidesByCategory(category: string) {
   return guides.filter(g => g.category === category);
 }
 
-export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+let allProductsCache: ProductWithGuide[] | null = null;
+
+export function getAllProducts(): ProductWithGuide[] {
+  if (allProductsCache) {
+    return allProductsCache;
+  }
+
   const seen = new Set<string>();
-  const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
+  const products: ProductWithGuide[] = [];
   for (const guide of guides) {
     if (!guide.affiliateProducts) continue;
     for (const p of guide.affiliateProducts) {
@@ -2377,10 +2389,12 @@ export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromG
       products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug, category: guide.category });
     }
   }
+
+  allProductsCache = products;
   return products;
 }
 
-export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+export function getFeaturedProducts(count: number = 8): ProductWithGuide[] {
   const all = getAllProducts();
   const priorityTags = ['Editor Pick', 'Best Overall', 'Best Value', 'Best Seller', 'Trend Pick', 'Must Have', '#1 Must Have', 'Top Pick'];
   const featured = all.filter(p => p.tag && priorityTags.includes(p.tag));
@@ -2388,9 +2402,9 @@ export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fr
   return [...featured, ...rest].slice(0, count);
 }
 
-export function getProductsByCategory(category: string, count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+export function getProductsByCategory(category: string, count: number = 8): ProductWithGuide[] {
   const seen = new Set<string>();
-  const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
+  const products: ProductWithGuide[] = [];
   const categoryGuides = category === 'all' ? guides : guides.filter(g => g.category === category);
   for (const guide of categoryGuides) {
     if (!guide.affiliateProducts) continue;
