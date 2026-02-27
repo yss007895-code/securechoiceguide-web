@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { guides, getGuideBySlug } from '@/lib/guides-data';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 import { guidesContent } from '@/lib/guides-content';
+import { safeJsonLdStringify } from '@/lib/utils';
 import ShopTheLook from '@/components/ShopTheLook';
 import MidArticleCTA from '@/components/MidArticleCTA';
 import StickyShopBar from '@/components/StickyShopBar';
@@ -83,11 +84,11 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLdStringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLdStringify(breadcrumbJsonLd) }} />
       {/* Product schema for rich snippets */}
       {products.map((p, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLdStringify({
           '@context': 'https://schema.org',
           '@type': 'Product',
           name: p.name,
@@ -105,7 +106,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
       ))}
       {/* FAQ schema for search snippets */}
       {guidesContent[guide.slug] && guidesContent[guide.slug].length > 1 && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLdStringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: guidesContent[guide.slug].slice(0, 5).map(section => ({
