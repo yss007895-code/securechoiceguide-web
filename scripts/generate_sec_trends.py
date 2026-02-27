@@ -182,8 +182,12 @@ def main():
         except Exception as e:
             print(f"❌ Failed on {topic}: {e}")
 
-    subprocess.run(["git", "config", "user.email", "agent@securechoiceguide.com"], check=True, cwd=ROOT)
-    subprocess.run(["git", "config", "user.name", "SecureChoiceGuide Content Agent"], check=True, cwd=ROOT)
+    # Configure git user from environment variables or use default
+    git_email = os.getenv("GIT_USER_EMAIL", "agent@securechoiceguide.com")
+    git_name = os.getenv("GIT_USER_NAME", "SecureChoiceGuide Content Agent")
+    subprocess.run(["git", "config", "user.email", git_email], check=True, cwd=ROOT)
+    subprocess.run(["git", "config", "user.name", git_name], check=True, cwd=ROOT)
+
     subprocess.run(["git", "add", "."], check=True, cwd=ROOT)
     subprocess.run(["git", "commit", "-m", "feat: populate site with 10 Security guides via Imagen 4"], check=True, cwd=ROOT)
     subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True, cwd=ROOT)
