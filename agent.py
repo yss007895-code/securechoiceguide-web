@@ -9,8 +9,14 @@ import re
 import tweepy
 import shutil
 import urllib.request
+import concurrent.futures
+import atexit
 from dotenv import load_dotenv
 from datetime import datetime
+
+# Initialize Thread Pool for Image Validation
+executor = concurrent.futures.ThreadPoolExecutor(max_workers=10)
+atexit.register(lambda: executor.shutdown(wait=False))
 
 # Load environment variables
 if sys.platform == "win32":
@@ -152,14 +158,35 @@ def validate_image_url(url, timeout=10):
         return False
 
 def get_valid_image_url(url):
-    """Return url if valid, otherwise return a verified fallback."""
-    if validate_image_url(url):
-        return url
+    """Return url if valid, otherwise return a verified fallback (checked in parallel)."""
+    # Start checking primary URL
+    future_primary = executor.submit(validate_image_url, url)
+
+    # Start checking fallbacks in parallel
+    future_fallbacks = {executor.submit(validate_image_url, fb): fb for fb in FALLBACK_IMAGES}
+
+    try:
+        # Prioritize primary URL
+        if future_primary.result():
+            # Cancel pending fallbacks if possible
+            for f in future_fallbacks:
+                f.cancel()
+            return url
+    except Exception:
+        pass  # Primary failed or error, proceed to fallbacks
+
     print(f"Image URL failed validation: {url}")
-    for fallback in FALLBACK_IMAGES:
-        if validate_image_url(fallback):
-            print(f"Using fallback: {fallback}")
-            return fallback
+
+    # Return the first fallback that completes successfully
+    for future in concurrent.futures.as_completed(future_fallbacks):
+        try:
+            if future.result():
+                fallback = future_fallbacks[future]
+                print(f"Using fallback: {fallback}")
+                return fallback
+        except Exception:
+            continue
+
     return FALLBACK_IMAGES[0]
 
 def strip_markdown_fences(text):
