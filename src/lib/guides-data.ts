@@ -2365,7 +2365,11 @@ export function getGuidesByCategory(category: string) {
   return guides.filter(g => g.category === category);
 }
 
+let cachedAllProducts: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] | null = null;
+
 export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+  if (cachedAllProducts) return cachedAllProducts;
+
   const seen = new Set<string>();
   const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
   for (const guide of guides) {
@@ -2377,6 +2381,7 @@ export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromG
       products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug, category: guide.category });
     }
   }
+  cachedAllProducts = products;
   return products;
 }
 
