@@ -1,16 +1,39 @@
-export const AdSenseUnit = () => (
-  <div className="w-full my-8 text-center min-h-[250px] bg-gray-50 flex items-center justify-center border border-gray-100 rounded-lg">
-    {/* Google AdSense Auto Ad Unit */}
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous"></script>
-    <ins className="adsbygoogle"
-         style={{ display: 'block' }}
-         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script dangerouslySetInnerHTML={{ __html: '(adsbygoogle = window.adsbygoogle || []).push({});' }} />
-  </div>
-);
+'use client';
+
+import { useEffect, useRef } from 'react';
+
+declare global {
+  interface Window {
+    adsbygoogle: unknown[];
+  }
+}
+
+export const AdSenseUnit = () => {
+  const initialized = useRef(false);
+
+  useEffect(() => {
+    if (initialized.current) return;
+    initialized.current = true;
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch {
+      // AdSense not loaded yet
+    }
+  }, []);
+
+  return (
+    <div className="w-full my-8 text-center min-h-[250px] bg-gray-50 flex items-center justify-center border border-gray-100 rounded-lg">
+      {/* Google AdSense Auto Ad Unit */}
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous"></script>
+      <ins className="adsbygoogle"
+           style={{ display: 'block' }}
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+  );
+};
 
 export const ViralVideoGrid = () => (
   <section className="my-10 p-6 rounded-2xl bg-gray-900 border border-gray-800">
