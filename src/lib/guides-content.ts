@@ -1,17 +1,17 @@
-import { batch12Content } from './guides-content-batch12';
-import { newGuidesContent } from './guides-content-new';
-import { guidesContentBatch2 } from './guides-content-batch2';
-import { guidesContentBatch3 as _raw3 } from './guides-content-batch3';
-import { guidesContentPhase4 } from './guides-content-phase4';
-import { guidesContentNew40Part1 } from './guides-content-new40-part1';
-import { guidesContentNew40Part2 } from './guides-content-new40-part2';
+import { batch12Content } from './guides-content-batch12.ts';
+import { newGuidesContent } from './guides-content-new.ts';
+import { guidesContentBatch2 } from './guides-content-batch2.ts';
+import { guidesContentBatch3 as _raw3 } from './guides-content-batch3.ts';
+import { guidesContentPhase4 } from './guides-content-phase4.ts';
+import { guidesContentNew40Part1 } from './guides-content-new40-part1.ts';
+import { guidesContentNew40Part2 } from './guides-content-new40-part2.ts';
 
 export interface ContentSection {
   heading: string;
   paragraphs: string[];
 }
 
-function normalizeBatch(raw: Record<string, unknown>): Record<string, ContentSection[]> {
+export function normalizeBatch(raw: Record<string, unknown>): Record<string, ContentSection[]> {
   const result: Record<string, ContentSection[]> = {};
   for (const [slug, data] of Object.entries(raw)) {
     if (Array.isArray(data)) {
