@@ -2388,7 +2388,13 @@ export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fr
   return [...featured, ...rest].slice(0, count);
 }
 
+const productsByCategoryCache: Record<string, (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[]> = {};
+
 export function getProductsByCategory(category: string, count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+  if (productsByCategoryCache[category]) {
+    return productsByCategoryCache[category].slice(0, count);
+  }
+
   const seen = new Set<string>();
   const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
   const categoryGuides = category === 'all' ? guides : guides.filter(g => g.category === category);
@@ -2401,6 +2407,8 @@ export function getProductsByCategory(category: string, count: number = 8): (Aff
       products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug, category: guide.category });
     }
   }
+
+  productsByCategoryCache[category] = products;
   return products.slice(0, count);
 }
 
