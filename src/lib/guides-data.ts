@@ -2365,7 +2365,8 @@ export function getGuidesByCategory(category: string) {
   return guides.filter(g => g.category === category);
 }
 
-export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+// Cache the products list at module level
+const _allProducts = (() => {
   const seen = new Set<string>();
   const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
   for (const guide of guides) {
@@ -2378,6 +2379,10 @@ export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromG
     }
   }
   return products;
+})();
+
+export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+  return _allProducts;
 }
 
 export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
