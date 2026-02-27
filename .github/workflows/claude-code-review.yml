@@ -24,6 +24,8 @@ jobs:
       pull-requests: read
       issues: read
       id-token: write
+    # Only run if the secret is available
+    if: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
 
     steps:
       - name: Checkout repository
