@@ -2382,7 +2382,7 @@ const _allProducts = (() => {
 })();
 
 export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
-  return _allProducts;
+  return [..._allProducts];
 }
 
 export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
