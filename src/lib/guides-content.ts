@@ -5,34 +5,8 @@ import { guidesContentBatch3 as _raw3 } from './guides-content-batch3';
 import { guidesContentPhase4 } from './guides-content-phase4';
 import { guidesContentNew40Part1 } from './guides-content-new40-part1';
 import { guidesContentNew40Part2 } from './guides-content-new40-part2';
-
-export interface ContentSection {
-  heading: string;
-  paragraphs: string[];
-}
-
-function normalizeBatch(raw: Record<string, unknown>): Record<string, ContentSection[]> {
-  const result: Record<string, ContentSection[]> = {};
-  for (const [slug, data] of Object.entries(raw)) {
-    if (Array.isArray(data)) {
-      result[slug] = data as ContentSection[];
-    } else {
-      const obj = data as { sections?: ContentSection[]; faq?: { question: string; answer: string }[]; ctaText?: string };
-      const sections: ContentSection[] = [...(obj.sections || [])];
-      if (obj.faq?.length) {
-        sections.push({
-          heading: 'Frequently Asked Questions',
-          paragraphs: obj.faq.map(f => `Q: ${f.question}\n\nA: ${f.answer}`)
-        });
-      }
-      if (obj.ctaText) {
-        sections.push({ heading: 'Bottom Line', paragraphs: [obj.ctaText] });
-      }
-      result[slug] = sections;
-    }
-  }
-  return result;
-}
+import { normalizeBatch, ContentSection } from './normalize-batch';
+export { ContentSection };
 
 const guidesContentBatch3 = normalizeBatch(_raw3 as Record<string, unknown>);
 
