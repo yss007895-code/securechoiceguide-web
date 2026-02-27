@@ -2388,18 +2388,33 @@ export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fr
   return [...featured, ...rest].slice(0, count);
 }
 
+const _categoryProductCache = new Map<string, (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[]>();
+
 export function getProductsByCategory(category: string, count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+  if (_categoryProductCache.has(category)) {
+    return _categoryProductCache.get(category)!.slice(0, count);
+  }
+
   const seen = new Set<string>();
   const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
-  const categoryGuides = category === 'all' ? guides : guides.filter(g => g.category === category);
-  for (const guide of categoryGuides) {
+
+  // Single-pass optimization: iterate all guides once instead of filtering first
+  for (const guide of guides) {
+    // Check if guide belongs to category (or category is 'all')
+    if (category !== 'all' && guide.category !== category) continue;
+
     if (!guide.affiliateProducts) continue;
+
     for (const p of guide.affiliateProducts) {
       const key = `${p.name}|${p.brand}`;
       if (seen.has(key)) continue;
       seen.add(key);
       products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug, category: guide.category });
     }
+  }
+
+  if (products.length > 0) {
+    _categoryProductCache.set(category, products);
   }
   return products.slice(0, count);
 }
