@@ -2365,10 +2365,10 @@ export function getGuidesByCategory(category: string) {
   return guides.filter(g => g.category === category);
 }
 
-export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+function extractUniqueProducts(sourceGuides: StyleGuide[]): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
   const seen = new Set<string>();
   const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
-  for (const guide of guides) {
+  for (const guide of sourceGuides) {
     if (!guide.affiliateProducts) continue;
     for (const p of guide.affiliateProducts) {
       const key = `${p.name}|${p.brand}`;
@@ -2380,6 +2380,10 @@ export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromG
   return products;
 }
 
+export function getAllProducts(): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+  return extractUniqueProducts(guides);
+}
+
 export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
   const all = getAllProducts();
   const priorityTags = ['Editor Pick', 'Best Overall', 'Best Value', 'Best Seller', 'Trend Pick', 'Must Have', '#1 Must Have', 'Top Pick'];
@@ -2389,18 +2393,8 @@ export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fr
 }
 
 export function getProductsByCategory(category: string, count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
-  const seen = new Set<string>();
-  const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
   const categoryGuides = category === 'all' ? guides : guides.filter(g => g.category === category);
-  for (const guide of categoryGuides) {
-    if (!guide.affiliateProducts) continue;
-    for (const p of guide.affiliateProducts) {
-      const key = `${p.name}|${p.brand}`;
-      if (seen.has(key)) continue;
-      seen.add(key);
-      products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug, category: guide.category });
-    }
-  }
+  const products = extractUniqueProducts(categoryGuides);
   return products.slice(0, count);
 }
 
