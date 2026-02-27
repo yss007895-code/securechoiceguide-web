@@ -2388,7 +2388,14 @@ export function getFeaturedProducts(count: number = 8): (AffiliateProduct & { fr
   return [...featured, ...rest].slice(0, count);
 }
 
+const categoryProductCache = new Map<string, (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[]>();
+
 export function getProductsByCategory(category: string, count: number = 8): (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] {
+  if (categoryProductCache.has(category)) {
+    const cached = categoryProductCache.get(category);
+    if (cached) return cached.slice(0, count);
+  }
+
   const seen = new Set<string>();
   const products: (AffiliateProduct & { fromGuide: string; fromGuideSlug: string; category: string })[] = [];
   const categoryGuides = category === 'all' ? guides : guides.filter(g => g.category === category);
@@ -2401,6 +2408,8 @@ export function getProductsByCategory(category: string, count: number = 8): (Aff
       products.push({ ...p, fromGuide: guide.title, fromGuideSlug: guide.slug, category: guide.category });
     }
   }
+
+  categoryProductCache.set(category, products);
   return products.slice(0, count);
 }
 
