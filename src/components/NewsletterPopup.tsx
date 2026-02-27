@@ -1,35 +1,28 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-
-const POPUP_KEY = 'scg_popup_shown';
-const SHOW_DELAY_MS = 30000;
+import { NewsletterLogic } from '../lib/newsletter-logic';
 
 export default function NewsletterPopup() {
   const [visible, setVisible] = useState(false);
-  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const logicRef = useRef<NewsletterLogic | null>(null);
 
   useEffect(() => {
-    if (sessionStorage.getItem(POPUP_KEY)) return;
+    const logic = new NewsletterLogic({
+      setVisible,
+      storage: sessionStorage,
+      doc: document,
+      setTimeout: window.setTimeout.bind(window),
+      clearTimeout: window.clearTimeout.bind(window),
+    });
 
-    timer.current = setTimeout(() => setVisible(true), SHOW_DELAY_MS);
+    logicRef.current = logic;
+    logic.init();
 
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY < 5 && !sessionStorage.getItem(POPUP_KEY)) {
-        if (timer.current) clearTimeout(timer.current);
-        setVisible(true);
-      }
-    };
-    document.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      if (timer.current) clearTimeout(timer.current);
-      document.removeEventListener('mouseleave', handleMouseLeave);
-    };
+    return () => logic.cleanup();
   }, []);
 
   const dismiss = () => {
-    setVisible(false);
-    sessionStorage.setItem(POPUP_KEY, '1');
+    logicRef.current?.dismiss();
   };
 
   if (!visible) return null;
