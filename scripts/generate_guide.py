@@ -166,8 +166,14 @@ def insert_guide_into_content_file(content_ts: str):
     GUIDES_CONTENT.write_text(updated, encoding="utf-8")
 
 def git_commit_and_push(slug: str, title: str):
-    subprocess.run(["git", "config", "user.email", "agent@securechoiceguide.com"], check=True, cwd=ROOT)
-    subprocess.run(["git", "config", "user.name", "SecureChoiceGuide Content Agent"], check=True, cwd=ROOT)
+    git_email = os.getenv("GIT_COMMITTER_EMAIL")
+    git_name = os.getenv("GIT_COMMITTER_NAME")
+
+    if git_email:
+        subprocess.run(["git", "config", "user.email", git_email], check=True, cwd=ROOT)
+    if git_name:
+        subprocess.run(["git", "config", "user.name", git_name], check=True, cwd=ROOT)
+
     subprocess.run(["git", "add", "."], check=True, cwd=ROOT)
     subprocess.run(["git", "commit", "-m", f"feat: auto-generate guide '{title}' [{slug}] with Imagen 4"], check=True, cwd=ROOT)
     subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True, cwd=ROOT)
