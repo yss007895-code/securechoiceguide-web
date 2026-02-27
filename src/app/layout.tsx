@@ -28,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://s.skimresources.com https://www.google-analytics.com https://partner.googleadservices.com https://tpc.googlesyndication.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://placehold.co https://images.unsplash.com https://securechoiceguide.com https://*.google-analytics.com https://*.googlesyndication.com https://*.doubleclick.net https://*.skimresources.com; connect-src 'self' https://www.google-analytics.com https://*.googlesyndication.com https://*.doubleclick.net https://analytics.google.com https://*.skimresources.com; frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com; object-src 'none'; base-uri 'self';" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-KSLL4L883T" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KSLL4L883T');`}
