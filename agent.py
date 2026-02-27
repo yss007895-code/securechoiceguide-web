@@ -19,8 +19,11 @@ else:
     load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "agents", ".env"))
     load_dotenv()  # also check local .env
 
-# Initialize Clients (Vertex AI - fashion-money-maker credits)
-gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", location="us-central1")
+# Initialize Clients (Vertex AI)
+project_id = os.getenv("GOOGLE_CLOUD_PROJECT")
+if not project_id:
+    raise ValueError("GOOGLE_CLOUD_PROJECT environment variable is not set.")
+gemini_client = genai.Client(vertexai=True, project=project_id, location="us-central1")
 
 GEMINI_MODEL = "gemini-3.1-pro"
 IMAGE_MODEL = "imagen-3.0-generate-001"

@@ -166,7 +166,12 @@ def insert_guide_into_content_file(content_ts: str):
 
 def main():
     print("🤖 SecureChoiceGuide Content Agent (Mass Gen) starting...")
-    gemini_client = genai.Client(vertexai=True, project="fashion-money-maker", location="us-central1")
+
+    project_id = os.getenv("GOOGLE_CLOUD_PROJECT")
+    if not project_id:
+        raise ValueError("GOOGLE_CLOUD_PROJECT environment variable is not set.")
+
+    gemini_client = genai.Client(vertexai=True, project=project_id, location="us-central1")
     
     reset_guides_data()
 
