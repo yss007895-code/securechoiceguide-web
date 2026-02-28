@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import SafeImage from '@/components/SafeImage';
 import { guides } from '@/lib/guides-data';
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants';
 import GuideCard from '@/components/GuideCard';
@@ -9,14 +8,7 @@ import ShopByCategory from '@/components/ShopByCategory';
 import AdUnit from '@/components/AdUnit';
 
 export default function HomePage() {
-  const editorPicks = guides.slice(0, 3);
-
-  const featuredGuides = [
-    { title: 'Best VPNs for Remote Work 2026', image: '/images/categories/cat-best-vpns.webp', url: '/guides/best-vpns-for-remote-workers-2026' },
-    { title: 'NordVPN vs ExpressVPN', image: '/images/categories/cat-nordvpn-express.webp', url: '/compare/nordvpn-vs-expressvpn' },
-    { title: 'Best Password Managers', image: '/images/categories/cat-password-manager.webp', url: '/guides/best-password-managers-2026' },
-    { title: 'Smart Home Security Guide', image: '/images/categories/cat-privacy-guide.webp', url: '/guides/how-to-secure-your-smart-home-2026' },
-  ];
+  const labReports = guides.slice(0, 3);
 
   const organizationJsonLd = {
     '@context': 'https://schema.org',
@@ -24,7 +16,7 @@ export default function HomePage() {
     name: SITE_NAME,
     url: SITE_URL,
     description: SITE_DESCRIPTION,
-    logo: `${SITE_URL}/logo.svg`,
+    logo: `${SITE_URL}/logo.webp`,
     sameAs: [
       'https://twitter.com/SecureChoiceG',
     ],
@@ -89,50 +81,59 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div>
-        {/* Hero */}
-        <section className="pt-16 pb-20">
-          <p className="text-sm text-emerald-400 font-mono tracking-wide uppercase mb-4">
-            Your Privacy Matters
-          </p>
-
-          <h1 className="font-body text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-5 text-white">
-            Stay safe online{' '}
-            <span className="font-body italic text-gray-400">with confidence</span>
+        {/* Hero — Dark centered */}
+        <section className="py-20 text-center">
+          <h1 className="font-display text-[2.5rem] sm:text-[3rem] font-medium text-text-primary leading-tight">
+            Your privacy, our priority.
           </h1>
-
-          <p className="text-lg text-gray-400 max-w-lg mb-8 leading-relaxed">
-            Expert VPN reviews, security tool comparisons, and privacy guides
-            to protect your digital life.
+          <p className="text-lg text-text-secondary mt-4 max-w-xl mx-auto">
+            Expert VPN reviews, security tool comparisons, and privacy guides to protect your digital life.
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
             <Link href="/shop" className="btn-primary text-center">Browse Security Tools</Link>
-            <Link href="/guides" className="btn-secondary text-center">Read VPN Reviews</Link>
+            <Link href="/guides" className="btn-secondary text-center">Read Reviews</Link>
           </div>
         </section>
 
-        {/* Ad banner between hero and products */}
-        <AdUnit slot="8863913673" format="horizontal" className="mb-4" />
+        {/* Trust Bar */}
+        <div className="flex flex-wrap items-center justify-center gap-6 py-4 mb-12 border-y border-dark-border">
+          <span className="flex items-center gap-2 text-xs font-mono text-text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+            Independently tested
+          </span>
+          <span className="text-dark-border">·</span>
+          <span className="flex items-center gap-2 text-xs font-mono text-text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            No affiliate bias
+          </span>
+          <span className="text-dark-border">·</span>
+          <span className="flex items-center gap-2 text-xs font-mono text-text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-orange"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Updated weekly
+          </span>
+        </div>
 
-        {/* Trending Products */}
+        {/* Ad */}
+        <AdUnit slot="8863913673" format="horizontal" className="mb-8" />
+
+        {/* Top Rated — List View */}
         <TrendingProducts />
 
-        {/* Editor&apos;s Picks */}
+        {/* Lab Reports — Guides */}
         <section className="mb-20">
           <div className="flex items-center justify-between mb-6">
-            <div>
-              <h2 className="section-title">Expert Picks</h2>
-              <p className="text-sm text-gray-400 mt-1">Hand-selected reviews by our security team</p>
-            </div>
-            <Link href="/guides" className="text-sm text-gray-500 hover:text-white font-medium transition-colors">View all</Link>
+            <h2 className="section-title">Lab Reports</h2>
+            <Link href="/guides" className="text-sm text-text-secondary hover:text-accent font-mono transition-colors">
+              View all
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {editorPicks.map(g => <GuideCard key={g.slug} guide={g} />)}
+            {labReports.map((g, i) => <GuideCard key={g.slug} guide={g} index={i} />)}
           </div>
         </section>
 
-        {/* Ad banner */}
-        <AdUnit slot="8863913673" format="horizontal" className="mb-4" />
+        {/* Ad */}
+        <AdUnit slot="8863913673" format="horizontal" className="mb-8" />
 
         {/* Shop by Category */}
         <ShopByCategory />
@@ -140,39 +141,6 @@ export default function HomePage() {
         {/* Newsletter */}
         <section className="mb-20">
           <NewsletterCTA />
-        </section>
-
-        {/* Featured Guides Gallery */}
-        <section className="mb-16">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <h2 className="section-title">Popular Reviews</h2>
-              <p className="text-sm text-gray-400 mt-1">Our most-read security guides this week</p>
-            </div>
-            <Link href="/guides"
-              className="text-sm text-gray-500 hover:text-white font-medium transition-colors">
-              View all
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-            {featuredGuides.map((pin, i) => (
-              <Link key={i} href={pin.url} className="group relative rounded-xl overflow-hidden aspect-[2/3] block">
-                <SafeImage
-                  src={pin.image}
-                  alt={pin.title}
-                  fill
-                  sizes="(max-width: 640px) 50vw, 25vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="font-body font-bold text-white text-sm leading-tight">
-                    {pin.title}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
         </section>
       </div>
     </>

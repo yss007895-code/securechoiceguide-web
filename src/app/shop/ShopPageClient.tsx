@@ -50,10 +50,10 @@ export default function ShopPageClient({ products, categories }: ShopPageClientP
             {/* Image / Logo */}
             <div className="w-full md:w-48 h-32 flex-shrink-0 bg-gray-50 rounded-lg border border-gray-100 flex items-center justify-center p-4 relative mt-4 md:mt-0">
               <img
-                src={p.image || '/images/placeholder.svg'}
+                src={p.image || '/images/placeholder.webp'}
                 alt={p.name}
                 className="max-w-full max-h-full object-contain"
-                onError={(e) => { e.currentTarget.src = '/images/placeholder.svg'; }}
+                onError={(e) => { e.currentTarget.src = '/images/placeholder.webp'; }}
               />
             </div>
             

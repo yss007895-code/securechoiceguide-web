@@ -5,32 +5,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        rose: {
-          50: '#ecfdf5', 100: '#d1fae5', 200: '#a7f3d0', 300: '#6ee7b7',
-          400: '#34d399', 500: '#10b981', 600: '#059669', 700: '#047857',
-          800: '#065f46', 900: '#064e3b',
+        dark: {
+          bg: '#0D1117',
+          surface: '#161B22',
+          border: '#30363D',
+          hover: '#1C2128',
         },
-        blush: {
-          50: '#ecfdf5', 100: '#d1fae5', 200: '#a7f3d0', 300: '#6ee7b7',
-          400: '#34d399', 500: '#10b981', 600: '#059669', 700: '#047857',
+        text: {
+          primary: '#E6EDF3',
+          secondary: '#8B949E',
+          muted: '#484F58',
         },
-        emerald: {
-          400: '#34d399', 500: '#10b981', 600: '#059669',
-        },
-        cyan: {
-          400: '#22d3ee', 500: '#06b6d4', 600: '#0891b2',
-        },
-        cream: '#0f172a',
-        champagne: '#1e293b',
+        accent: '#58A6FF',
+        green: '#3FB950',
+        red: '#F85149',
+        orange: '#D29922',
       },
       fontFamily: {
-        display: ['Inter', 'Helvetica', 'sans-serif'],
-        body: ['Inter', 'Helvetica', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        display: ['Sora', 'Inter', 'sans-serif'],
+        body: ['"Merriweather Sans"', 'Helvetica', 'sans-serif'],
+        mono: ['"IBM Plex Mono"', 'monospace'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-out',
-        'slide-up': 'slideUp 0.4s ease-out',
+        'fade-in': 'fadeIn 0.3s ease-out',
+        'slide-up': 'slideUp 0.3s ease-out',
         'slide-in-bottom': 'slideInBottom 0.3s ease-out',
       },
       keyframes: {
