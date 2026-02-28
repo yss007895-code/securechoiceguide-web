@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     type: 'website', locale: 'en_US', url: SITE_URL, siteName: SITE_NAME,
     title: 'SecureChoiceGuide - VPN Reviews & Online Privacy Guides',
     description: 'Expert VPN reviews, cybersecurity tool comparisons, and privacy guides to keep you safe online.',
+    images: [{ url: '/images/guides/expressvpn-review-2026-hero.webp', width: 1200, height: 630, alt: 'SecureChoiceGuide - VPN Reviews & Online Privacy Guides' }],
   },
   twitter: { card: 'summary_large_image', site: '@SecureChoiceG', creator: '@SecureChoiceG' },
   alternates: { canonical: SITE_URL },
