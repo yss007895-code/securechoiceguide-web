@@ -19,28 +19,26 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-surface-border">
+    <header className="sticky top-0 z-50 bg-navy-700 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-navy-900 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-trust-green"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-            </div>
-            <span className="font-display font-bold text-lg text-navy-900">
-              SecureChoice<span className="text-trust-green">Guide</span>
+        <div className="flex items-center justify-between h-14">
+          <Link href="/" className="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span className="font-display font-bold text-base tracking-tight">
+              SecureChoice<span className="text-accent">Guide</span>
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-0.5">
             {links.map(l => (
               <Link
                 key={l.href}
                 href={l.href}
                 aria-current={isActive(l.href) ? 'page' : undefined}
-                className={`px-3 py-2 text-sm font-display font-medium rounded-md transition-colors ${
+                className={`px-3 py-1.5 text-sm font-display font-medium transition-colors ${
                   isActive(l.href)
-                    ? 'text-navy-900 bg-surface-muted'
-                    : 'text-navy-600 hover:text-navy-900 hover:bg-surface-light'
+                    ? 'text-white bg-white/15'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {l.label}
@@ -49,12 +47,12 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link href="/guides" className="hidden sm:block bg-trust-green text-white text-sm font-display font-semibold px-5 py-2.5 rounded-lg hover:bg-trust-green-dark transition-all">
+            <Link href="/guides" className="hidden sm:block bg-accent text-white text-sm font-display font-semibold px-4 py-2 hover:bg-navy-500 transition-colors">
               Get Protected
             </Link>
             <button
               onClick={() => setOpen(!open)}
-              className="md:hidden text-navy-600 hover:text-navy-900 p-2"
+              className="md:hidden text-white/80 hover:text-white p-2"
               aria-label={open ? 'Close menu' : 'Open menu'}
               aria-expanded={open}
             >
@@ -68,24 +66,24 @@ export default function Header() {
         </div>
 
         {open && (
-          <nav className="md:hidden pb-4 pt-2 animate-fade-in border-t border-surface-border">
+          <nav className="md:hidden pb-4 pt-2 animate-fade-in border-t border-white/20">
             {links.map(l => (
               <Link
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
                 aria-current={isActive(l.href) ? 'page' : undefined}
-                className={`block px-4 py-3 text-sm font-display rounded-md ${
+                className={`block px-4 py-3 text-sm font-display ${
                   isActive(l.href)
-                    ? 'text-navy-900 font-semibold bg-surface-muted'
-                    : 'text-navy-600 hover:text-navy-900 hover:bg-surface-light'
+                    ? 'text-white font-semibold bg-white/15'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {l.label}
               </Link>
             ))}
             <div className="px-4 mt-3">
-              <Link href="/guides" className="block bg-trust-green text-white text-sm font-display font-semibold text-center px-4 py-2.5 rounded-lg hover:bg-trust-green-dark transition-all">
+              <Link href="/guides" className="block bg-accent text-white text-sm font-display font-semibold text-center px-4 py-2.5 hover:bg-navy-500 transition-colors">
                 Get Protected
               </Link>
             </div>

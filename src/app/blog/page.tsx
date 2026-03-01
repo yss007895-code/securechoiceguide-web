@@ -77,16 +77,16 @@ export default function BlogPage() {
 
   return (
     <div className="pt-8 max-w-4xl mx-auto">
-      <div className="mb-10">
+      <div className="mb-10 border-b border-surface-border pb-4">
         <h1 className="section-title">Security Brief</h1>
-        <p className="text-gray-400 mt-1">Cybersecurity insights, VPN reviews, and privacy analysis</p>
+        <p className="text-gray-500 mt-1">Cybersecurity insights, VPN reviews, and privacy analysis</p>
       </div>
 
       {/* Featured Post */}
       <Link href={featured.link} className="block group mb-12">
-        <div className="card-hover overflow-hidden rounded-xl">
+        <div className="border border-surface-border overflow-hidden rounded-sm">
           {featured.image && (
-            <div className="relative h-64 sm:h-80 overflow-hidden">
+            <div className="relative h-64 sm:h-80 overflow-hidden bg-surface-light">
               <SafeImage
                 src={featured.image}
                 alt={featured.title}
@@ -94,23 +94,23 @@ export default function BlogPage() {
                 sizes="(max-width: 768px) 100vw, 800px"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute top-4 left-4">
-                <span className="text-[11px] font-medium text-white bg-emerald-500/80 backdrop-blur-sm px-2.5 py-1 rounded-full">
+              <div className="absolute top-0 left-0">
+                <span className="text-xs font-display font-semibold text-white bg-navy-500 px-3 py-1.5">
                   {featured.cat}
                 </span>
               </div>
             </div>
           )}
           <div className="p-6">
-            <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
+            <div className="flex items-center gap-3 text-xs text-gray-400 font-display mb-3">
               <span>{featured.date}</span>
-              <span>-</span>
+              <span>&middot;</span>
               <span>{featured.time} read</span>
             </div>
-            <h2 className="font-body text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors mb-3 leading-snug">
+            <h2 className="font-display text-2xl font-bold text-gray-900 group-hover:text-navy-500 transition-colors mb-3 leading-snug">
               {featured.title}
             </h2>
-            <p className="text-gray-400 leading-relaxed">{featured.excerpt}</p>
+            <p className="text-gray-500 leading-relaxed">{featured.excerpt}</p>
           </div>
         </div>
       </Link>
@@ -118,9 +118,9 @@ export default function BlogPage() {
       {/* Post Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {rest.map(p => (
-          <Link key={p.slug} href={p.link} className="card-hover block group overflow-hidden rounded-xl">
+          <Link key={p.slug} href={p.link} className="border border-surface-border hover:shadow-md transition-shadow block group overflow-hidden rounded-sm">
             {p.image && (
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-44 overflow-hidden bg-surface-light">
                 <SafeImage
                   src={p.image}
                   alt={p.title}
@@ -128,34 +128,34 @@ export default function BlogPage() {
                   sizes="(max-width: 768px) 100vw, 400px"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3">
-                  <span className="text-[10px] font-medium text-white bg-emerald-500/80 backdrop-blur-sm px-2 py-0.5 rounded-full">
+                <div className="absolute top-0 left-0">
+                  <span className="text-[10px] font-display font-semibold text-white bg-navy-500 px-2.5 py-1">
                     {p.cat}
                   </span>
                 </div>
               </div>
             )}
             <div className="p-5">
-              <div className="flex items-center gap-2 text-xs text-gray-400 mb-2">
+              <div className="flex items-center gap-2 text-xs text-gray-400 font-display mb-2">
                 <span>{p.date}</span>
-                <span>-</span>
+                <span>&middot;</span>
                 <span>{p.time} read</span>
               </div>
-              <h3 className="font-body font-bold text-white group-hover:text-emerald-400 transition-colors mb-2 leading-snug">
+              <h3 className="font-display font-bold text-gray-900 group-hover:text-navy-500 transition-colors mb-2 leading-snug">
                 {p.title}
               </h3>
-              <p className="text-sm text-gray-400 line-clamp-2">{p.excerpt}</p>
+              <p className="text-sm text-gray-500 line-clamp-2">{p.excerpt}</p>
             </div>
           </Link>
         ))}
       </div>
 
       {/* Newsletter CTA */}
-      <div className="mt-16 border border-gray-700 rounded-xl p-8 text-center bg-gray-800">
-        <h3 className="font-body text-xl font-bold text-white mb-2">Stay Protected</h3>
-        <p className="text-gray-400 text-sm mb-6">New security articles and VPN deals delivered every Thursday.</p>
-        <div className="text-sm text-emerald-400 font-medium">Coming soon</div>
-        <p className="text-[11px] text-gray-500 mt-3">No spam. Unsubscribe anytime.</p>
+      <div className="mt-16 bg-navy-700 p-8 text-center text-white">
+        <h3 className="font-display text-xl font-bold mb-2">Stay Protected</h3>
+        <p className="text-navy-200 text-sm mb-6">New security articles and VPN deals delivered every Thursday.</p>
+        <div className="text-sm text-accent font-medium">Coming soon</div>
+        <p className="text-[11px] text-navy-300 mt-3">No spam. Unsubscribe anytime.</p>
       </div>
     </div>
   );

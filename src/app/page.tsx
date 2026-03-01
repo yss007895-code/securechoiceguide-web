@@ -82,40 +82,36 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div>
-        {/* Hero — Clean Magazine */}
-        <section className="py-16 sm:py-20 text-center border-b border-surface-border">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-trust-green-light text-trust-green-dark text-sm font-display font-medium rounded-full mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
-            Independent Reviews Since 2024
-          </div>
-          <h1 className="font-display text-[2.5rem] sm:text-[3.25rem] font-extrabold text-navy-900 leading-tight max-w-3xl mx-auto">
-            Find the right security tools,{' '}
-            <span className="text-trust-green">backed by real testing.</span>
+        {/* Hero — Comparitech-style full-width */}
+        <section className="py-14 sm:py-20 text-center bg-navy-700 text-white -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 mb-10">
+          <p className="text-xs font-display font-semibold uppercase tracking-widest text-accent mb-4">Independent Reviews Since 2024</p>
+          <h1 className="font-display text-[2.25rem] sm:text-[3rem] font-bold leading-tight max-w-3xl mx-auto">
+            Find the right security tools, backed by real testing.
           </h1>
-          <p className="text-lg text-navy-600 mt-5 max-w-2xl mx-auto leading-relaxed font-body">
+          <p className="text-base text-navy-200 mt-5 max-w-2xl mx-auto leading-relaxed">
             We test VPNs, password managers, and privacy tools so you don&apos;t have to.
             Honest recommendations with no pay-to-play rankings.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
-            <Link href="/shop" className="btn-primary text-center">Browse Security Tools</Link>
-            <Link href="/guides" className="btn-secondary text-center">Read Reviews</Link>
+            <Link href="/shop" className="bg-accent text-white font-display font-semibold px-6 py-3 text-sm hover:bg-navy-500 transition-colors text-center">Browse Security Tools</Link>
+            <Link href="/guides" className="bg-white/10 border border-white/20 text-white font-display font-medium px-6 py-3 text-sm hover:bg-white/20 transition-colors text-center">Read Reviews</Link>
           </div>
         </section>
 
         {/* Trust Bar */}
-        <div className="flex flex-wrap items-center justify-center gap-8 py-6 mb-12 bg-surface-light border-b border-surface-border">
-          <span className="flex items-center gap-2 text-sm font-display font-medium text-navy-700">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-trust-green"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+        <div className="flex flex-wrap items-center justify-center gap-8 py-5 mb-10 border-b border-surface-border">
+          <span className="flex items-center gap-2 text-sm font-display font-medium text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-navy-500"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
             Independently tested
           </span>
-          <span className="w-1 h-1 rounded-full bg-navy-300"></span>
-          <span className="flex items-center gap-2 text-sm font-display font-medium text-navy-700">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-trust-green"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <span className="w-1 h-1 rounded-full bg-gray-300"></span>
+          <span className="flex items-center gap-2 text-sm font-display font-medium text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-navy-500"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
             No affiliate bias
           </span>
-          <span className="w-1 h-1 rounded-full bg-navy-300"></span>
-          <span className="flex items-center gap-2 text-sm font-display font-medium text-navy-700">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-trust-green"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span className="w-1 h-1 rounded-full bg-gray-300"></span>
+          <span className="flex items-center gap-2 text-sm font-display font-medium text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-navy-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             Updated weekly
           </span>
         </div>
@@ -131,9 +127,9 @@ export default function HomePage() {
           <div className="flex items-center justify-between mb-8">
             <div>
               <h2 className="section-title">Editor&apos;s Picks</h2>
-              <p className="text-sm text-navy-500 mt-1 font-display">Our most comprehensive reviews and guides</p>
+              <p className="text-sm text-gray-500 mt-1 font-display">Our most comprehensive reviews and guides</p>
             </div>
-            <Link href="/guides" className="text-sm text-trust-green hover:text-trust-green-dark font-display font-medium transition-colors">
+            <Link href="/guides" className="text-sm text-navy-500 hover:text-navy-700 font-display font-medium transition-colors">
               View all reviews &rarr;
             </Link>
           </div>
@@ -146,7 +142,7 @@ export default function HomePage() {
         <section className="mb-16">
           <div className="flex items-center justify-between mb-8">
             <h2 className="section-title">Latest Reviews</h2>
-            <Link href="/guides" className="text-sm text-trust-green hover:text-trust-green-dark font-display font-medium transition-colors">
+            <Link href="/guides" className="text-sm text-navy-500 hover:text-navy-700 font-display font-medium transition-colors">
               See all &rarr;
             </Link>
           </div>
