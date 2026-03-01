@@ -2,98 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @layer base {
   body {
-    @apply bg-dark-bg text-text-primary font-body;
+    @apply bg-surface-white text-navy-900 font-body;
   }
   ::selection {
-    @apply bg-accent/30 text-white;
+    @apply bg-trust-green/20 text-navy-900;
   }
 }
 
 @layer components {
   .card {
-    @apply bg-dark-surface border border-dark-border;
+    @apply bg-white border border-surface-border rounded-lg;
   }
   .card-hover {
-    @apply card hover:border-accent/40 transition-colors duration-200;
+    @apply card hover:border-navy-300 hover:shadow-md transition-all duration-200;
   }
   .btn-primary {
-    @apply bg-green text-dark-bg font-display font-semibold px-6 py-3 text-sm hover:brightness-110 transition-all duration-200;
+    @apply bg-trust-green text-white font-display font-semibold px-6 py-3 text-sm rounded-lg hover:bg-trust-green-dark transition-all duration-200;
   }
   .btn-secondary {
-    @apply bg-transparent border border-dark-border text-text-primary font-display font-medium px-6 py-3 text-sm hover:border-accent hover:text-accent transition-all duration-200;
+    @apply bg-white border border-surface-border text-navy-800 font-display font-medium px-6 py-3 text-sm rounded-lg hover:border-navy-400 hover:bg-surface-light transition-all duration-200;
   }
   .badge {
-    @apply inline-flex items-center px-2.5 py-1 text-xs font-mono font-medium;
+    @apply inline-flex items-center px-2.5 py-1 text-xs font-display font-medium rounded-full;
   }
   .badge-new {
-    @apply badge bg-accent/15 text-accent border border-accent/30;
+    @apply badge bg-trust-green-light text-trust-green-dark;
   }
   .badge-hot {
-    @apply badge bg-green/15 text-green border border-green/30;
+    @apply badge bg-amber-50 text-amber-700;
   }
   .badge-category {
-    @apply badge bg-dark-surface text-text-secondary border border-dark-border;
+    @apply badge bg-surface-muted text-navy-600;
   }
   .section-title {
-    @apply font-display text-xl sm:text-2xl font-semibold text-text-primary;
+    @apply font-display text-xl sm:text-2xl font-bold text-navy-900;
   }
 
   /* Product card */
   .product-card {
-    @apply bg-dark-surface border border-dark-border overflow-hidden transition-colors duration-200;
+    @apply bg-white border border-surface-border rounded-lg overflow-hidden transition-all duration-200;
   }
   .product-card:hover {
-    @apply border-dark-border bg-dark-hover;
+    @apply border-navy-300 shadow-md;
   }
   .product-card:hover .product-card-action {
     @apply opacity-100;
   }
   .price-current {
-    @apply font-mono font-semibold text-text-primary;
+    @apply font-display font-bold text-navy-900;
   }
   .price-original {
-    @apply font-mono text-text-muted line-through text-sm;
+    @apply font-display text-navy-400 line-through text-sm;
   }
   .urgency-text {
-    @apply text-xs text-green font-mono font-medium;
+    @apply text-xs text-trust-green font-display font-medium;
   }
 
   /* Tabs */
   .tab-active {
-    @apply text-text-primary border-b-2 border-accent;
+    @apply text-navy-900 border-b-2 border-trust-green;
   }
   .tab-inactive {
-    @apply text-text-secondary hover:text-text-primary border-b-2 border-transparent;
+    @apply text-navy-500 hover:text-navy-700 border-b-2 border-transparent;
   }
 
   /* Prose */
   .prose-style h2 {
-    @apply font-display text-xl font-semibold text-text-primary mt-10 mb-4;
+    @apply font-display text-xl font-bold text-navy-900 mt-10 mb-4;
   }
   .prose-style h3 {
-    @apply font-display text-lg font-medium text-text-primary mt-8 mb-3;
+    @apply font-display text-lg font-semibold text-navy-800 mt-8 mb-3;
   }
   .prose-style p {
-    @apply text-text-secondary leading-relaxed mb-4;
+    @apply text-navy-700 leading-relaxed mb-4 text-[17px];
   }
   .prose-style a {
     @apply text-accent hover:underline underline-offset-2;
   }
   .prose-style blockquote {
-    @apply border-l-2 border-accent bg-dark-surface px-6 py-4 my-6 text-text-secondary;
+    @apply border-l-4 border-trust-green bg-trust-green-light/50 px-6 py-4 my-6 text-navy-700 rounded-r-lg;
   }
   .prose-style table {
     @apply w-full border-collapse mb-6;
   }
   .prose-style th {
-    @apply bg-dark-surface text-text-primary font-mono text-sm font-medium px-4 py-3 text-left border-b border-dark-border;
+    @apply bg-surface-light text-navy-800 font-display text-sm font-semibold px-4 py-3 text-left border-b-2 border-surface-border;
   }
   .prose-style td {
-    @apply px-4 py-3 text-sm text-text-secondary border-b border-dark-border;
+    @apply px-4 py-3 text-sm text-navy-700 border-b border-surface-border;
+  }
+
+  /* Rating badge */
+  .rating-badge {
+    @apply inline-flex items-center justify-center w-10 h-10 rounded-full bg-trust-green text-white font-display font-bold text-sm;
+  }
+  .rating-badge-lg {
+    @apply inline-flex items-center justify-center w-14 h-14 rounded-full bg-trust-green text-white font-display font-bold text-xl;
   }
 }
 
@@ -109,7 +117,7 @@
 
 /* Focus */
 *:focus-visible {
-  @apply outline-2 outline-offset-2 outline-accent;
+  @apply outline-2 outline-offset-2 outline-trust-green;
 }
 
 html {
@@ -117,7 +125,7 @@ html {
 }
 
 .skip-link {
-  @apply absolute -top-10 left-4 bg-accent text-dark-bg px-4 py-2 z-[100] text-sm font-display font-medium;
+  @apply absolute -top-10 left-4 bg-trust-green text-white px-4 py-2 z-[100] text-sm font-display font-medium rounded;
   transition: top 0.2s;
 }
 .skip-link:focus {

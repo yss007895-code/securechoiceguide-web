@@ -5,26 +5,37 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        dark: {
-          bg: '#0D1117',
-          surface: '#161B22',
-          border: '#30363D',
-          hover: '#1C2128',
+        navy: {
+          50: '#f0f4f8',
+          100: '#d9e2ec',
+          200: '#bcccdc',
+          300: '#9fb3c8',
+          400: '#829ab1',
+          500: '#627d98',
+          600: '#486581',
+          700: '#334e68',
+          800: '#243b53',
+          900: '#102a43',
+          950: '#0a1929',
         },
-        text: {
-          primary: '#E6EDF3',
-          secondary: '#8B949E',
-          muted: '#484F58',
+        trust: {
+          green: '#0d9f6e',
+          'green-light': '#def7ec',
+          'green-dark': '#046c4e',
         },
-        accent: '#58A6FF',
-        green: '#3FB950',
-        red: '#F85149',
-        orange: '#D29922',
+        surface: {
+          white: '#ffffff',
+          light: '#f9fafb',
+          muted: '#f3f4f6',
+          border: '#e5e7eb',
+          'border-dark': '#d1d5db',
+        },
+        accent: '#1a56db',
       },
       fontFamily: {
-        display: ['Sora', 'Inter', 'sans-serif'],
-        body: ['"Merriweather Sans"', 'Helvetica', 'sans-serif'],
-        mono: ['"IBM Plex Mono"', 'monospace'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
+        body: ['"Source Serif 4"', 'Georgia', 'serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
       },
       animation: {
         'fade-in': 'fadeIn 0.3s ease-out',

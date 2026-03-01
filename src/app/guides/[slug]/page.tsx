@@ -121,47 +121,47 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
 
       <article className="pt-8 max-w-3xl mx-auto">
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
-          <Link href="/" className="hover:text-emerald-400">Home</Link>
-          <span>/</span>
-          <Link href="/guides" className="hover:text-emerald-400">Guides</Link>
-          <span>/</span>
-          <span className="text-gray-600 capitalize">{guide.category.replace('-', ' ')}</span>
+        <nav className="flex items-center gap-2 text-sm text-navy-500 mb-6 font-display">
+          <Link href="/" className="hover:text-trust-green transition-colors">Home</Link>
+          <span className="text-navy-300">/</span>
+          <Link href="/guides" className="hover:text-trust-green transition-colors">Guides</Link>
+          <span className="text-navy-300">/</span>
+          <span className="text-navy-400 capitalize">{guide.category.replace('-', ' ')}</span>
         </nav>
 
         {/* Header */}
         <header className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <span className="badge-new">{guide.tag}</span>
-            <span className="text-xs text-gray-400">{guide.readTime} read</span>
+            <span className="text-xs text-navy-500 font-display">{guide.readTime} read</span>
           </div>
-          <h1 className="font-body text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
+          <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight mb-4">
             {guide.title}
           </h1>
-          <p className="text-lg text-gray-400 leading-relaxed">{guide.description}</p>
-          <div className="flex items-center gap-4 mt-4 text-sm text-gray-400">
-            <span>By SecureChoiceGuide Team</span>
-            <span>·</span>
+          <p className="text-lg text-navy-600 leading-relaxed">{guide.description}</p>
+          <div className="flex items-center gap-4 mt-5 text-sm text-navy-500 font-display border-t border-surface-border pt-5">
+            <span className="font-medium text-navy-700">By SecureChoiceGuide Team</span>
+            <span className="w-1 h-1 rounded-full bg-navy-300"></span>
             <span>{new Date(guide.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
           </div>
         </header>
 
         {/* Hero Image */}
         {guide.image && (
-          <div className="mb-8 rounded-2xl overflow-hidden relative h-64 sm:h-80">
+          <div className="mb-8 rounded-xl overflow-hidden relative h-64 sm:h-80 border border-surface-border">
             <SafeImage src={guide.image} alt={guide.title} fill priority sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
           </div>
         )}
 
-        {/* Quick Shop Banner — Clean */}
+        {/* Quick Shop Banner */}
         {products.length > 0 && (
-          <div className="mb-8 bg-gray-800/50 border border-gray-700 rounded-xl p-4 flex items-center justify-between">
+          <div className="mb-8 bg-surface-light border border-surface-border rounded-xl p-4 flex items-center justify-between">
             <div>
-              <p className="font-semibold text-sm text-white">{products.length} curated items in this guide</p>
-              <p className="text-xs text-gray-400 mt-0.5">Prices start at {minPrice < 999 ? `$${minPrice}` : '$15'}</p>
+              <p className="font-display font-semibold text-sm text-navy-900">{products.length} curated tools in this guide</p>
+              <p className="text-xs text-navy-500 mt-0.5">Prices start at {minPrice < 999 ? `$${minPrice}` : '$15'}</p>
             </div>
-            <a href="#shop-the-look" className="text-sm text-gray-500 hover:text-white font-medium transition-colors">
-              View all
+            <a href="#shop-the-look" className="text-sm text-trust-green hover:text-trust-green-dark font-display font-medium transition-colors">
+              View all &rarr;
             </a>
           </div>
         )}
@@ -175,12 +175,12 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
 
         {/* Table of Contents */}
         {guidesContent[guide.slug] && (
-          <div className="border border-gray-700 rounded-xl p-5 mb-8 bg-gray-800">
-            <h3 className="font-body font-bold text-sm text-gray-700 mb-3">In This Guide</h3>
-            <ul className="space-y-2">
+          <div className="border border-surface-border rounded-xl p-6 mb-8 bg-surface-light">
+            <h3 className="font-display font-bold text-sm text-navy-900 mb-4 uppercase tracking-wide">In This Guide</h3>
+            <ul className="space-y-2.5">
               {guidesContent[guide.slug].map((section, idx) => (
-                <li key={idx} className="flex items-center gap-2 text-sm text-gray-500">
-                  <span className="w-5 h-5 rounded-full bg-gray-100 text-gray-500 text-xs flex items-center justify-center font-medium">{idx + 1}</span>
+                <li key={idx} className="flex items-center gap-3 text-sm text-navy-600 font-display">
+                  <span className="w-6 h-6 rounded-full bg-trust-green text-white text-xs flex items-center justify-center font-bold">{idx + 1}</span>
                   {section.heading}
                 </li>
               ))}
@@ -200,7 +200,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
                     : <p key={pIdx}>{p}</p>
                 ))}
 
-                {/* Mid-Article CTA after first section — hero with image */}
+                {/* Mid-Article CTA after first section */}
                 {idx === 0 && products.length > 0 && (
                   <MidArticleCTA products={products} variant="hero" />
                 )}
@@ -210,7 +210,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
                   <AdUnit slot="7545186477" format="fluid" layout="in-article" />
                 )}
 
-                {/* Mid-Article CTA after third section — pair */}
+                {/* Mid-Article CTA after third section */}
                 {idx === 2 && products.length > 1 && (
                   <MidArticleCTA products={products.slice(1)} variant="pair" />
                 )}
@@ -237,9 +237,9 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
         )}
 
         {/* Share & Save */}
-        <div className="border border-gray-700 rounded-xl p-5 my-8 bg-gray-800">
-          <p className="font-body font-bold text-white text-sm mb-1 text-center">Found this helpful?</p>
-          <p className="text-xs text-gray-400 mb-4 text-center">Share it with someone who&apos;d love it.</p>
+        <div className="border border-surface-border rounded-xl p-6 my-8 bg-surface-light">
+          <p className="font-display font-bold text-navy-900 text-sm mb-1 text-center">Found this helpful?</p>
+          <p className="text-xs text-navy-500 mb-4 text-center">Share it with someone who&apos;d find it useful.</p>
           <ShareButtons
             url={`${SITE_URL}/guides/${guide.slug}`}
             title={guide.title}
@@ -250,18 +250,18 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
         {/* Related Guides */}
         {related.length > 0 && (
           <div className="mt-10 mb-8">
-            <h3 className="font-body font-bold text-white mb-4">You Might Also Like</h3>
+            <h3 className="font-display font-bold text-navy-900 mb-4">You Might Also Like</h3>
             <div className="grid gap-3">
               {related.map(r => (
                 <Link key={r.slug} href={`/guides/${r.slug}`} className="card-hover p-4 flex items-center gap-4 group">
                   {r.image ? (
-                    <SafeImage src={r.image} alt={r.title} width={64} height={64} className="rounded-xl object-cover" />
+                    <SafeImage src={r.image} alt={r.title} width={64} height={64} className="rounded-lg object-cover" />
                   ) : (
-                    <div className="w-16 h-16 rounded-xl bg-gray-100" />
+                    <div className="w-16 h-16 rounded-lg bg-surface-muted" />
                   )}
                   <div className="flex-1">
-                    <p className="font-semibold text-sm text-gray-800 group-hover:text-emerald-400 transition-colors">{r.title}</p>
-                    <p className="text-xs text-gray-400">{r.readTime} · {r.tag}</p>
+                    <p className="font-display font-semibold text-sm text-navy-900 group-hover:text-trust-green transition-colors">{r.title}</p>
+                    <p className="text-xs text-navy-500 font-display">{r.readTime} · {r.tag}</p>
                   </div>
                 </Link>
               ))}
@@ -272,18 +272,18 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
         {/* More From SecureChoiceGuide */}
         {moreGuides.length > 0 && (
           <div className="mb-8">
-            <h3 className="font-body font-bold text-white mb-4">Explore More Guides</h3>
+            <h3 className="font-display font-bold text-navy-900 mb-4">Explore More Guides</h3>
             <div className="grid gap-3">
               {moreGuides.map(r => (
                 <Link key={r.slug} href={`/guides/${r.slug}`} className="card-hover p-4 flex items-center gap-4 group">
                   {r.image ? (
-                    <SafeImage src={r.image} alt={r.title} width={64} height={64} className="rounded-xl object-cover" />
+                    <SafeImage src={r.image} alt={r.title} width={64} height={64} className="rounded-lg object-cover" />
                   ) : (
-                    <div className="w-16 h-16 rounded-xl bg-gray-100" />
+                    <div className="w-16 h-16 rounded-lg bg-surface-muted" />
                   )}
                   <div className="flex-1">
-                    <p className="font-semibold text-sm text-gray-800 group-hover:text-emerald-400 transition-colors">{r.title}</p>
-                    <p className="text-xs text-gray-400">{r.readTime} · {r.tag}</p>
+                    <p className="font-display font-semibold text-sm text-navy-900 group-hover:text-trust-green transition-colors">{r.title}</p>
+                    <p className="text-xs text-navy-500 font-display">{r.readTime} · {r.tag}</p>
                   </div>
                 </Link>
               ))}
@@ -297,7 +297,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
         {/* Bottom AdSense Banner */}
         <AdUnit slot="8863913673" format="horizontal" className="mt-8" />
 
-        <p className="text-xs text-gray-400 text-center mt-8">
+        <p className="text-xs text-navy-400 text-center mt-8 font-display">
           Last updated: {guide.date} · Affiliate disclosure: Some links may earn us a commission at no extra cost to you.
         </p>
         <ViralVideoGrid />

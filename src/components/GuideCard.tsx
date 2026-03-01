@@ -6,9 +6,9 @@ export default function GuideCard({ guide, index }: { guide: StyleGuide; index?:
   const num = index !== undefined ? String(index + 1).padStart(2, '0') : null;
 
   return (
-    <Link href={`/guides/${guide.slug}`} className="group block border border-dark-border hover:border-accent/40 transition-colors bg-dark-surface">
+    <Link href={`/guides/${guide.slug}`} className="group block border border-surface-border hover:border-navy-300 hover:shadow-lg transition-all duration-200 rounded-xl bg-white overflow-hidden">
       {guide.image && (
-        <div className="relative aspect-[16/10] overflow-hidden bg-dark-bg">
+        <div className="relative aspect-[16/10] overflow-hidden bg-surface-light">
           <SafeImage
             src={guide.image}
             alt={guide.title}
@@ -17,13 +17,13 @@ export default function GuideCard({ guide, index }: { guide: StyleGuide; index?:
             className="object-cover group-hover:scale-105 transition-transform duration-500"
           />
           <div className="absolute top-3 left-3">
-            <span className="text-[11px] font-mono font-medium text-accent bg-dark-bg/90 px-2.5 py-1 border border-dark-border">
+            <span className="text-xs font-display font-semibold text-white bg-trust-green px-3 py-1 rounded-full">
               {guide.tag}
             </span>
           </div>
           {num && (
             <div className="absolute top-3 right-3">
-              <span className="font-mono text-lg font-semibold text-green bg-dark-bg/90 px-2 py-0.5 border border-dark-border">
+              <span className="font-display text-lg font-bold text-white bg-navy-900/80 w-9 h-9 rounded-full flex items-center justify-center">
                 {num}
               </span>
             </div>
@@ -31,15 +31,15 @@ export default function GuideCard({ guide, index }: { guide: StyleGuide; index?:
         </div>
       )}
       <div className="p-5">
-        <h3 className="font-display font-semibold text-text-primary group-hover:text-accent transition-colors leading-snug">
+        <h3 className="font-display font-bold text-navy-900 group-hover:text-trust-green transition-colors leading-snug">
           {guide.title}
         </h3>
-        <p className="text-sm text-text-secondary line-clamp-2 mt-2">{guide.description}</p>
-        <div className="flex items-center gap-3 mt-3 text-xs font-mono text-text-muted">
+        <p className="text-sm text-navy-600 line-clamp-2 mt-2">{guide.description}</p>
+        <div className="flex items-center gap-3 mt-4 text-xs font-display text-navy-500">
           <span>{guide.readTime}</span>
           {guide.affiliateProducts && guide.affiliateProducts.length > 0 && (
             <>
-              <span className="text-dark-border">|</span>
+              <span className="w-1 h-1 rounded-full bg-navy-300"></span>
               <span>{guide.affiliateProducts.length} tools reviewed</span>
             </>
           )}

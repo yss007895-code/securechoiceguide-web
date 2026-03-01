@@ -28,77 +28,79 @@ export default function NordVPNvsExpressVPN() {
 
   return (
     <article className="pt-8 max-w-3xl mx-auto">
-      <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
-        <Link href="/" className="hover:text-emerald-400">Home</Link>
-        <span>/</span>
-        <Link href="/compare" className="hover:text-emerald-400">Compare</Link>
-        <span>/</span>
-        <span className="text-gray-300">NordVPN vs ExpressVPN</span>
+      <nav className="flex items-center gap-2 text-sm text-navy-500 mb-6 font-display">
+        <Link href="/" className="hover:text-trust-green transition-colors">Home</Link>
+        <span className="text-navy-300">/</span>
+        <Link href="/compare" className="hover:text-trust-green transition-colors">Compare</Link>
+        <span className="text-navy-300">/</span>
+        <span className="text-navy-400">NordVPN vs ExpressVPN</span>
       </nav>
 
       <header className="mb-8">
         <span className="badge-new mb-3 inline-block">VPN Comparison</span>
-        <h1 className="font-body text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
+        <h1 className="font-display text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight mb-4">
           NordVPN vs ExpressVPN 2026: Which One Actually Wins?
         </h1>
-        <p className="text-lg text-gray-400 leading-relaxed">
+        <p className="text-lg text-navy-600 leading-relaxed">
           Six months of testing, 15 server locations, and real speed benchmarks. Here is the honest comparison -- no paid promotions, no fluff.
         </p>
-        <div className="flex items-center gap-4 mt-4 text-sm text-gray-400">
-          <span>By SecureChoiceGuide Team</span>
-          <span>-</span>
+        <div className="flex items-center gap-4 mt-5 text-sm text-navy-500 font-display border-t border-surface-border pt-5">
+          <span className="font-medium text-navy-700">By SecureChoiceGuide Team</span>
+          <span className="w-1 h-1 rounded-full bg-navy-300"></span>
           <span>Updated February 2026</span>
-          <span>-</span>
+          <span className="w-1 h-1 rounded-full bg-navy-300"></span>
           <span>12 min read</span>
         </div>
       </header>
 
       {/* Quick Verdict */}
-      <div className="mb-8 p-6 rounded-2xl bg-emerald-950 border border-emerald-800">
-        <h2 className="font-body font-bold text-white text-lg mb-3">Quick Verdict</h2>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="text-center p-4 rounded-xl bg-emerald-900/50">
-            <div className="text-2xl font-bold text-emerald-400 mb-1">NordVPN</div>
-            <div className="text-sm text-gray-300">Best for most people</div>
-            <div className="text-xs text-gray-400 mt-1">Faster, cheaper, more servers</div>
-            <a href="https://www.amazon.com/s?k=NordVPN&tag=securecg-20" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block bg-emerald-500 text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-emerald-600 transition-colors">Get NordVPN</a>
+      <div className="mb-10 p-6 rounded-xl bg-surface-light border-2 border-trust-green/20">
+        <h2 className="font-display font-bold text-navy-900 text-lg mb-4">Quick Verdict</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="text-center p-5 rounded-xl bg-white border-2 border-trust-green shadow-sm">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-trust-green text-white font-display font-bold text-lg mb-3">9.4</div>
+            <div className="text-xl font-display font-bold text-navy-900 mb-1">NordVPN</div>
+            <div className="text-sm text-navy-600 font-display font-medium">Best for most people</div>
+            <div className="text-xs text-navy-500 mt-1">Faster, cheaper, more servers</div>
+            <a href="https://www.amazon.com/s?k=NordVPN&tag=securecg-20" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block bg-trust-green text-white text-xs font-display font-bold px-5 py-2.5 rounded-lg hover:bg-trust-green-dark transition-colors">Get NordVPN</a>
           </div>
-          <div className="text-center p-4 rounded-xl bg-gray-800/50">
-            <div className="text-2xl font-bold text-gray-200 mb-1">ExpressVPN</div>
-            <div className="text-sm text-gray-300">Best for router users</div>
-            <div className="text-xs text-gray-400 mt-1">Better router app, wider device support</div>
-            <a href="https://www.amazon.com/s?k=ExpressVPN&tag=securecg-20" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block bg-gray-600 text-white text-xs font-semibold px-4 py-2 rounded-lg hover:bg-gray-500 transition-colors">Get ExpressVPN</a>
+          <div className="text-center p-5 rounded-xl bg-white border border-surface-border">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-navy-200 text-navy-800 font-display font-bold text-lg mb-3">8.9</div>
+            <div className="text-xl font-display font-bold text-navy-900 mb-1">ExpressVPN</div>
+            <div className="text-sm text-navy-600 font-display font-medium">Best for router users</div>
+            <div className="text-xs text-navy-500 mt-1">Better router app, wider device support</div>
+            <a href="https://www.amazon.com/s?k=ExpressVPN&tag=securecg-20" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block bg-navy-800 text-white text-xs font-display font-bold px-5 py-2.5 rounded-lg hover:bg-navy-900 transition-colors">Get ExpressVPN</a>
           </div>
         </div>
       </div>
 
       {/* Comparison Table */}
       <div className="mb-10 overflow-x-auto">
-        <h2 className="font-body font-bold text-white text-xl mb-4">Head-to-Head Comparison</h2>
-        <table className="w-full text-sm border border-gray-800 rounded-xl overflow-hidden">
+        <h2 className="font-display font-bold text-navy-900 text-xl mb-4">Head-to-Head Comparison</h2>
+        <table className="w-full text-sm border border-surface-border rounded-xl overflow-hidden">
           <thead>
-            <tr className="bg-gray-800">
-              <th className="text-left p-3 text-gray-300 font-semibold">Feature</th>
-              <th className="text-center p-3 text-emerald-400 font-semibold">NordVPN</th>
-              <th className="text-center p-3 text-gray-300 font-semibold">ExpressVPN</th>
+            <tr className="bg-navy-900">
+              <th className="text-left p-3 text-white font-display font-semibold">Feature</th>
+              <th className="text-center p-3 text-trust-green font-display font-semibold">NordVPN</th>
+              <th className="text-center p-3 text-navy-200 font-display font-semibold">ExpressVPN</th>
             </tr>
           </thead>
           <tbody>
             {rows.map((row, i) => (
-              <tr key={i} className={i % 2 === 0 ? 'bg-gray-900' : 'bg-gray-950'}>
-                <td className="p-3 text-gray-400">{row.feature}</td>
-                <td className={`p-3 text-center ${row.winner === 'nord' ? 'text-emerald-400 font-semibold' : 'text-gray-300'}`}>
-                  {row.winner === 'nord' && <span className="mr-1">-</span>}{row.nord}
+              <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-surface-light'}>
+                <td className="p-3 text-navy-700 font-display font-medium">{row.feature}</td>
+                <td className={`p-3 text-center font-display ${row.winner === 'nord' ? 'text-trust-green font-bold bg-trust-green-light/30' : 'text-navy-600'}`}>
+                  {row.winner === 'nord' && <span className="mr-1">&#10003;</span>}{row.nord}
                 </td>
-                <td className={`p-3 text-center ${row.winner === 'express' ? 'text-cyan-400 font-semibold' : 'text-gray-400'}`}>
-                  {row.winner === 'express' && <span className="mr-1">-</span>}{row.express}
+                <td className={`p-3 text-center font-display ${row.winner === 'express' ? 'text-accent font-bold bg-blue-50' : 'text-navy-600'}`}>
+                  {row.winner === 'express' && <span className="mr-1">&#10003;</span>}{row.express}
                 </td>
               </tr>
             ))}
-            <tr className="bg-gray-800 font-bold">
-              <td className="p-3 text-white">Score</td>
-              <td className="p-3 text-center text-emerald-400">{nordWins} wins</td>
-              <td className="p-3 text-center text-gray-300">{expressWins} win</td>
+            <tr className="bg-navy-900 font-bold">
+              <td className="p-3 text-white font-display">Score</td>
+              <td className="p-3 text-center text-trust-green font-display">{nordWins} wins</td>
+              <td className="p-3 text-center text-navy-200 font-display">{expressWins} win</td>
             </tr>
           </tbody>
         </table>
@@ -155,18 +157,18 @@ export default function NordVPNvsExpressVPN() {
       </div>
 
       <div className="mt-10 mb-8">
-        <h3 className="font-body font-bold text-white mb-4">Related Reviews</h3>
+        <h3 className="font-display font-bold text-navy-900 mb-4">Related Reviews</h3>
         <div className="grid gap-3">
           {[
             { title: 'Best VPNs 2026: Full Rankings', slug: 'best-vpns-2026-ultimate-online-privacy' },
             { title: 'Best VPN for Streaming', slug: 'best-vpn-for-streaming-2026' },
             { title: 'Best Free VPNs 2026 (Actually Safe)', slug: 'best-free-vpn-2026' },
           ].map(g => (
-            <Link key={g.slug} href={`/guides/${g.slug}`} className="card-hover p-4 flex items-center gap-4 group">
+            <Link key={g.slug} href={`/guides/${g.slug}`} className="card-hover p-4 flex items-center gap-4 group rounded-lg">
               <div className="flex-1">
-                <p className="font-semibold text-sm text-gray-300 group-hover:text-emerald-400 transition-colors">{g.title}</p>
+                <p className="font-display font-semibold text-sm text-navy-900 group-hover:text-trust-green transition-colors">{g.title}</p>
               </div>
-              <span className="text-gray-500 text-sm">View review</span>
+              <span className="text-navy-400 text-sm font-display">View review &rarr;</span>
             </Link>
           ))}
         </div>
