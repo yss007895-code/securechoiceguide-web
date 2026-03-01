@@ -86,8 +86,8 @@ const blogPosts: Record<string, BlogPost> = {
       { title: 'NordVPN vs ExpressVPN', slug: 'nordvpn-vs-expressvpn-ultimate-battle-online-security' },
     ],
   },
-  'password-security-guide': {
-    slug: 'password-security-guide',
+  'password-security': {
+    slug: 'password-security',
     title: '7 Password Mistakes That Put Your Accounts at Risk',
     excerpt: 'Reusing passwords, skipping 2FA, and using weak passphrases are just the start.',
     date: '2026-02-16',
@@ -118,6 +118,83 @@ const blogPosts: Record<string, BlogPost> = {
     relatedGuides: [
       { title: 'Best Password Managers 2026', slug: 'best-password-managers-2026' },
       { title: 'Online Privacy Guide', slug: 'complete-online-privacy-guide-2026' },
+    ],
+  },
+  'vpn-comparison': {
+    slug: 'vpn-comparison',
+    title: 'NordVPN vs ExpressVPN: We Compared 9 Categories So You Don\'t Have To',
+    excerpt: 'After 3 weeks of side-by-side testing on speed, security, streaming, and 6 other factors, one VPN came out ahead -- but the margin was closer than expected.',
+    date: '2026-02-15',
+    cat: 'Comparison',
+    image: '/images/categories/cat-nordvpn-express.webp',
+    content: [
+      { heading: 'Speed: NordVPN Wins by a Narrow Margin', paragraphs: [
+        'On a 500 Mbps fiber connection, NordVPN averaged 438 Mbps download using NordLynx, while ExpressVPN hit 401 Mbps with Lightway. The gap narrows on long-distance connections -- NordVPN managed 295 Mbps from New York to Tokyo versus ExpressVPN\'s 278 Mbps.',
+        'Upload speeds told a similar story. NordVPN posted 210 Mbps compared to ExpressVPN\'s 195 Mbps. For most users, both are fast enough that the difference won\'t matter outside of large file transfers.',
+      ] },
+      { heading: 'Privacy and Security Policies', paragraphs: [
+        'Both providers operate under no-logs policies verified by independent audits. NordVPN completed its fourth PricewaterhouseCoopers audit in late 2025, while ExpressVPN had KPMG verify its TrustedServer system in January 2026. On paper, the privacy commitments are comparable.',
+        'The key difference is jurisdiction. NordVPN operates from Panama, outside any intelligence-sharing alliance. ExpressVPN is incorporated in the British Virgin Islands, which also falls outside the 14 Eyes. Neither provider has ever been compelled to hand over user data in a verified legal proceeding.',
+      ] },
+      { heading: 'Pricing and Value', paragraphs: [
+        'NordVPN\'s 2-year plan comes to $3.09/month (6 simultaneous connections). ExpressVPN charges $6.67/month on its annual plan (8 connections). Surfshark, for reference, undercuts both at $2.19/month with unlimited devices.',
+        'ExpressVPN justifies its premium with a polished interface and consistently reliable streaming performance. Whether that\'s worth an extra $43/year depends on how much you value UI polish over raw savings.',
+      ] },
+    ],
+    relatedGuides: [
+      { title: 'Best VPNs 2026', slug: 'best-vpns-2026-ultimate-online-privacy' },
+      { title: 'NordVPN vs ExpressVPN', slug: 'nordvpn-vs-expressvpn-ultimate-battle-online-security' },
+    ],
+  },
+  'antivirus-tested': {
+    slug: 'antivirus-tested',
+    title: 'We Tested 12 Antivirus Programs -- Here Are the 5 Best for 2026',
+    excerpt: 'After running 1,200 malware samples across 12 antivirus suites, the detection rates ranged from 94.2% to 99.8%. Five stood out from the pack.',
+    date: '2026-02-14',
+    cat: 'Review',
+    image: '/images/categories/cat-antivirus.webp',
+    content: [
+      { heading: 'How We Tested: 1,200 Samples, 12 Programs, 4 Weeks', paragraphs: [
+        'We collected 1,200 unique malware samples from January 2026 -- including ransomware, trojans, adware, and zero-day exploits sourced from VirusTotal and MalwareBazaar. Each antivirus suite was installed fresh on identical Windows 11 VMs with no other security software running.',
+        'Detection rates were measured at three stages: real-time download blocking, on-demand full scan, and behavioral detection after execution. We also tracked CPU usage, memory footprint, and scan times to measure the performance cost of each product.',
+      ] },
+      { heading: 'Top 5 Results: Bitdefender Leads at 99.8%', paragraphs: [
+        'Bitdefender Total Security caught 99.8% of samples across all three stages, with real-time protection blocking 98.9% before the files even hit disk. Norton 360 came in at 99.5%, followed by Kaspersky (99.3%), Malwarebytes Premium (98.7%), and ESET NOD32 (98.1%).',
+        'Performance impact varied significantly. ESET used just 85 MB of RAM during idle monitoring, while Norton consumed 340 MB. Bitdefender landed in the middle at 180 MB. If you\'re running older hardware with 8 GB of RAM or less, ESET is the lightest option that still delivers strong protection.',
+      ] },
+      { heading: 'Free vs Paid: Is the Upgrade Worth It?', paragraphs: [
+        'Windows Defender, which ships free with Windows 11, scored 96.1% detection in our tests -- respectable, but it missed 47 samples that the top paid options caught. The gaps were concentrated in zero-day exploits and fileless malware, which are the threats most likely to cause real damage.',
+        'Paid suites typically add a firewall, VPN, password manager, and dark web monitoring. Bitdefender Total Security runs $39.99/year for 5 devices. For the 3.7% detection improvement plus bundled tools, most users will find that cost reasonable -- roughly $0.67/month per device.',
+      ] },
+    ],
+    relatedGuides: [
+      { title: 'Best Antivirus Software 2026', slug: 'best-antivirus-2026' },
+    ],
+  },
+  'data-breach-guide': {
+    slug: 'data-breach-guide',
+    title: 'How to Check If Your Data Was Leaked in a Breach',
+    excerpt: 'Over 4.1 billion records were exposed in data breaches during 2025. Here\'s how to find out if yours were among them -- and what to do next.',
+    date: '2026-02-12',
+    cat: 'Guide',
+    image: '/images/categories/cat-identity-theft.webp',
+    content: [
+      { heading: 'Step 1: Check HaveIBeenPwned and Mozilla Monitor', paragraphs: [
+        'HaveIBeenPwned (HIBP) is the largest breach database, covering over 14 billion compromised accounts as of February 2026. Enter your email at haveibeenpwned.com and you\'ll see every known breach tied to that address -- including what data was exposed (passwords, IP addresses, phone numbers, etc.).',
+        'Mozilla Monitor (formerly Firefox Monitor) pulls from the same HIBP database but adds ongoing monitoring with email alerts. The free tier watches one email address; the $13.99/month Plus plan covers five emails and includes automatic data broker removal requests from 190+ people-search sites.',
+      ] },
+      { heading: 'Step 2: Assess the Damage and Prioritize', paragraphs: [
+        'Not all breaches are equal. A leak containing only email addresses is low risk. A breach that includes plaintext passwords, Social Security numbers, or financial data requires immediate action. HIBP tells you exactly which data fields were compromised in each breach.',
+        'Prioritize accounts with financial access first -- banking, payment processors, crypto exchanges. Then move to email accounts (which can be used to reset other passwords). Social media and shopping accounts come last. Change passwords on any account that shared a password with a breached service.',
+      ] },
+      { heading: 'Step 3: Lock Down Your Accounts Going Forward', paragraphs: [
+        'After changing compromised passwords, enable two-factor authentication on every account that supports it. Hardware security keys (like YubiKey 5C at $55) offer the strongest protection. Authenticator apps are the next best option. SMS-based 2FA is better than nothing but can be bypassed via SIM swapping.',
+        'Consider freezing your credit at all three bureaus (Equifax, Experian, TransUnion) -- it\'s free and takes about 10 minutes per bureau online. A credit freeze prevents anyone from opening new accounts in your name, which is the primary risk after a breach that exposed personal identifiers.',
+      ] },
+    ],
+    relatedGuides: [
+      { title: 'Online Privacy Guide', slug: 'complete-online-privacy-guide-2026' },
+      { title: 'Best Password Managers 2026', slug: 'best-password-managers-2026' },
     ],
   },
 };
@@ -153,16 +230,16 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   return (
     <article className="pt-8 max-w-3xl mx-auto">
       <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
-        <Link href="/" className="hover:text-emerald-400">Home</Link>
+        <Link href="/" className="hover:text-navy-500">Home</Link>
         <span>/</span>
-        <Link href="/blog" className="hover:text-emerald-400">Blog</Link>
+        <Link href="/blog" className="hover:text-navy-500">Blog</Link>
         <span>/</span>
-        <span className="text-gray-300">{post.cat}</span>
+        <span className="text-gray-600">{post.cat}</span>
       </nav>
 
       <header className="mb-8">
         <span className="badge-new mb-3 inline-block">{post.cat}</span>
-        <h1 className="font-body text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">{post.title}</h1>
+        <h1 className="font-display text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">{post.title}</h1>
         <p className="text-lg text-gray-400 leading-relaxed">{post.excerpt}</p>
         <div className="flex items-center gap-4 mt-4 text-sm text-gray-400">
           <span>By SecureChoiceGuide Team</span>
@@ -193,9 +270,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             {post.relatedGuides.map(g => (
               <Link key={g.slug} href={`/guides/${g.slug}`} className="card-hover p-4 flex items-center gap-4 group">
                 <div className="flex-1">
-                  <p className="font-semibold text-sm text-gray-300 group-hover:text-emerald-400 transition-colors">{g.title}</p>
+                  <p className="font-semibold text-sm text-gray-700 group-hover:text-navy-500 transition-colors">{g.title}</p>
                 </div>
-                <span className="text-gray-500 text-sm">View review</span>
+                <span className="text-gray-400 text-sm">View review</span>
               </Link>
             ))}
           </div>
