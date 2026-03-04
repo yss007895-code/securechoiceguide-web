@@ -93,8 +93,8 @@ export default function HomePage() {
             Honest recommendations with no pay-to-play rankings.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
-            <Link href="/shop" className="bg-accent text-white font-display font-semibold px-6 py-3 text-sm hover:bg-navy-500 transition-colors text-center">Browse Security Tools</Link>
-            <Link href="/guides" className="bg-white/10 border border-white/20 text-white font-display font-medium px-6 py-3 text-sm hover:bg-white/20 transition-colors text-center">Read Reviews</Link>
+            <Link href="/guides" className="bg-accent text-white font-display font-semibold px-6 py-3 text-sm hover:bg-navy-500 transition-colors text-center">Find Your Security Solution</Link>
+            <Link href="/about" className="bg-white/10 border border-white/20 text-white font-display font-medium px-6 py-3 text-sm hover:bg-white/20 transition-colors text-center">About Our Reviews</Link>
           </div>
         </section>
 

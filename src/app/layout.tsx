@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: 'SecureChoiceGuide - VPN Reviews & Online Privacy Guides', template: '%s | SecureChoiceGuide' },
   description: SITE_DESCRIPTION,
-  keywords: ['best vpn 2026', 'vpn reviews', 'online privacy', 'cybersecurity tools', 'password manager', 'internet security', 'vpn comparison', 'nordvpn review', 'expressvpn review', 'online safety guide', 'privacy protection'],
+  keywords: ['home security systems', 'best vpn 2026', 'vpn reviews', 'cybersecurity tools', 'password manager', 'dash cam reviews', 'smart locks', 'identity theft protection', 'personal safety', 'car safety', 'online privacy'],
   other: {
     'google-adsense-account': 'ca-pub-8049649445649586',
   },

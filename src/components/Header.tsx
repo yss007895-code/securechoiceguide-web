@@ -8,9 +8,8 @@ export default function Header() {
   const pathname = usePathname();
   const links = [
     { href: '/guides', label: 'Reviews' },
-    { href: '/shop', label: 'Tools' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/compare/nordvpn-vs-expressvpn', label: 'Compare' },
+    { href: '/about', label: 'About' },
+    { href: '/disclaimer', label: 'Disclosure' },
   ];
 
   const isActive = (href: string) => {
@@ -48,7 +47,7 @@ export default function Header() {
 
           <div className="flex items-center gap-3">
             <Link href="/guides" className="hidden sm:block bg-accent text-white text-sm font-display font-semibold px-4 py-2 hover:bg-navy-500 transition-colors">
-              Get Protected
+              Find Your Security Solution
             </Link>
             <button
               onClick={() => setOpen(!open)}

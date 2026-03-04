@@ -18,17 +18,16 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-semibold text-white text-xs uppercase tracking-wider mb-4">Explore</h4>
             <div className="space-y-2.5">
-              <Link href="/shop" className="block text-sm text-navy-300 hover:text-white transition-colors">Security Tools</Link>
-              <Link href="/guides" className="block text-sm text-navy-300 hover:text-white transition-colors">VPN Reviews</Link>
-              <Link href="/blog" className="block text-sm text-navy-300 hover:text-white transition-colors">Blog</Link>
+              <Link href="/guides" className="block text-sm text-navy-300 hover:text-white transition-colors">All Reviews</Link>
+              <Link href="/about" className="block text-sm text-navy-300 hover:text-white transition-colors">About Us</Link>
             </div>
           </div>
           <div>
             <h4 className="font-display font-semibold text-white text-xs uppercase tracking-wider mb-4">Popular</h4>
             <div className="space-y-2.5">
-              <Link href="/guides/best-vpns-2026-ultimate-online-privacy" className="block text-sm text-navy-300 hover:text-white transition-colors">Best VPNs 2026</Link>
+              <Link href="/guides/best-home-security-systems-2026" className="block text-sm text-navy-300 hover:text-white transition-colors">Home Security Systems</Link>
+              <Link href="/guides/top-vpns-for-privacy-2026" className="block text-sm text-navy-300 hover:text-white transition-colors">Top VPNs 2026</Link>
               <Link href="/guides/best-password-managers-2026" className="block text-sm text-navy-300 hover:text-white transition-colors">Password Managers</Link>
-              <Link href="/guides/nordvpn-vs-expressvpn-ultimate-battle-online-security" className="block text-sm text-navy-300 hover:text-white transition-colors">NordVPN vs ExpressVPN</Link>
             </div>
           </div>
           <div>
