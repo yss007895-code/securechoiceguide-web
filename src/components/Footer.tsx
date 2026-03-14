@@ -43,6 +43,16 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Our Network */}
+        <div className="mt-10 pt-8 border-t border-navy-800">
+          <h4 className="font-display font-semibold text-white text-xs uppercase tracking-wider mb-4">Our Network</h4>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <a href="https://smarttoolpicks.net" target="_blank" rel="noopener noreferrer" className="text-sm text-navy-300 hover:text-white transition-colors">SmartToolPicks</a>
+            <a href="https://stylemedaily.org" target="_blank" rel="noopener noreferrer" className="text-sm text-navy-300 hover:text-white transition-colors">StyleMeDaily</a>
+            <a href="https://trendloopusa.net" target="_blank" rel="noopener noreferrer" className="text-sm text-navy-300 hover:text-white transition-colors">TrendLoop USA</a>
+          </div>
+        </div>
+
         {/* Affiliate Disclosure */}
         <div className="mt-10 p-4 border border-navy-700 bg-navy-900">
           <p className="text-xs text-navy-400 leading-relaxed">

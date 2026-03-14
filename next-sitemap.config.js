@@ -2,14 +2,7 @@
 module.exports = {
   siteUrl: 'https://securechoiceguide.com',
   generateRobotsTxt: true,
-  exclude: [
-    '/compare/nordstrom-vs-asos',
-    '/compare/nordstrom-vs-asos/',
-    '/compare/shein-vs-asos',
-    '/compare/shein-vs-asos/',
-    '/compare/zara-vs-hm',
-    '/compare/zara-vs-hm/',
-  ],
+  exclude: [],
   changefreq: 'weekly',
   priority: 0.7,
   robotsTxtOptions: {

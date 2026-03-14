@@ -54,7 +54,9 @@ export const shopCategories: ShopCategory[] = [
   { slug: 'car-safety', name: 'Car Safety', description: 'Vehicle security' },
 ];
 
-// ─── Guides (6 sample) ───────────────────────────────────
+import { phase6Guides } from './guides-data-phase6';
+
+// ─── Guides (6 original + 24 phase6) ───────────────────────────────────
 export const guides: StyleGuide[] = [
   {
     slug: 'best-home-security-systems-2026',
@@ -193,6 +195,7 @@ export const guides: StyleGuide[] = [
       { name: 'LifeLock Ultimate Plus', brand: 'Norton LifeLock', price: '$29.99/mo', rating: 8.5, pros: ['Includes Norton antivirus', 'Established brand', '$1M insurance'], cons: ['Most expensive', 'Auto-renewal issues reported'], url: 'https://www.amazon.com/dp/B09BFXID03?tag=securechoice-20', image: '/images/categories/cat-password-managers.webp' },
     ],
   },
+  ...phase6Guides,
 ];
 
 // ─── Helper Functions ─────────────────────────────────────
